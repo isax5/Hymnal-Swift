@@ -8,6 +8,7 @@
 import Foundation
 
 struct Hymn {
+    let Number: Int
     let Title: String
     let Content: String
 }

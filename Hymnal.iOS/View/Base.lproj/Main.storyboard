@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -11,38 +11,67 @@
         <!--Adventist Hymnal-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="NumberViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="NumberViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="#255" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-PC-Iv0">
-                                <rect key="frame" x="134" y="321" width="146" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyg-SD-hEJ">
-                                <rect key="frame" x="148" y="422" width="119" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-do-vVP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-na-v5O" userLabel="FilterBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="filter background"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyg-SD-hEJ">
+                                <rect key="frame" x="147" y="420" width="120" height="56"/>
                                 <color key="backgroundColor" name="primary color"/>
-                                <color key="tintColor" name="primary color oposite"/>
-                                <state key="normal" title="Open"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="VVf-qj-Evb"/>
+                                    <constraint firstAttribute="height" constant="56" id="fEu-ie-UOh"/>
+                                </constraints>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" name="primary color oposite"/>
+                                </state>
                                 <connections>
                                     <action selector="openButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UFx-iW-6hB"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="#255" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-PC-Iv0">
+                                <rect key="frame" x="134" y="318" width="146" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="K9P-Xj-Sqh"/>
+                                    <constraint firstAttribute="width" constant="146" id="dZu-bF-g4a"/>
+                                </constraints>
+                                <color key="textColor" name="primary color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Qo-do-vVP" secondAttribute="bottom" id="0Hu-07-8v0"/>
+                            <constraint firstItem="q3F-na-v5O" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="66e-LB-j0f"/>
+                            <constraint firstAttribute="trailing" secondItem="q3F-na-v5O" secondAttribute="trailing" id="C4z-GV-aXH"/>
+                            <constraint firstAttribute="trailing" secondItem="1Qo-do-vVP" secondAttribute="trailing" id="KvD-5M-qzH"/>
+                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="top" secondItem="Eer-PC-Iv0" secondAttribute="bottom" constant="30" id="NoV-IV-78U"/>
+                            <constraint firstItem="1Qo-do-vVP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Tq5-nF-3qv"/>
+                            <constraint firstItem="1Qo-do-vVP" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="YHH-B5-dyv"/>
+                            <constraint firstItem="q3F-na-v5O" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="efz-fH-qjq"/>
+                            <constraint firstItem="Eer-PC-Iv0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="f24-uf-197"/>
+                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="l3X-rR-Str"/>
+                            <constraint firstAttribute="bottom" secondItem="q3F-na-v5O" secondAttribute="bottom" id="me9-8z-HLA"/>
+                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="v6H-Na-BUp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adventist Hymnal" id="sHJ-bi-Obc">
-                        <barButtonItem key="leftBarButtonItem" title="records" id="cAi-Gk-Bsf">
+                        <barButtonItem key="leftBarButtonItem" title="records" image="gobackward" catalog="system" id="cAi-Gk-Bsf">
                             <connections>
                                 <segue destination="3Wg-Y0-rqh" kind="show" identifier="goToHistory" id="GcN-2U-FrG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="search" id="Fi4-J6-tTb">
+                        <barButtonItem key="rightBarButtonItem" title="search" image="magnifyingglass" catalog="system" id="Fi4-J6-tTb">
                             <connections>
                                 <segue destination="nRl-gD-u3t" kind="show" identifier="goToSearch" id="lVV-Zs-TOW"/>
                             </connections>
@@ -60,7 +89,7 @@
         <!--Index-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="IndexViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="IndexViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +117,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Index" id="KMr-Yr-InR"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="showHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Efn-qt-MCR"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Efn-qt-MCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -119,7 +148,7 @@
         <!--Favorites-->
         <scene sceneID="5GQ-QD-csN">
             <objects>
-                <viewController id="YtU-6D-8xs" customClass="FavoritesViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YtU-6D-8xs" customClass="FavoritesViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dFP-5T-0Wg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +157,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="j8T-tW-xVb"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="showHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fl9-vI-lIP"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fl9-vI-lIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4X-zB-QCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,7 +167,7 @@
         <!--Settings-->
         <scene sceneID="cDT-6v-5Gn">
             <objects>
-                <viewController id="JWW-98-hHi" customClass="SettingsViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JWW-98-hHi" customClass="SettingsViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFd-1P-aws">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +189,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MtR-oQ-xBe">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="bar back color"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="bar title color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -179,6 +212,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3Ga-AT-WP4">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="bar back color"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="bar title color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -198,6 +235,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="nQh-nc-Fge">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="bar back color"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="bar title color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -217,6 +258,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="jLY-B8-4dQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="bar back color"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="bar title color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -246,7 +291,7 @@
         <!--Search-->
         <scene sceneID="8Dl-JG-gcO">
             <objects>
-                <tableViewController id="nRl-gD-u3t" customClass="SearchTableViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="nRl-gD-u3t" customClass="SearchTableViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ysS-IH-BSA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,34 +336,51 @@
         <!--#255-->
         <scene sceneID="7ah-Vk-Wz9">
             <objects>
-                <viewController id="QMJ-3I-FKq" customClass="HymnViewController" customModule="Hymnal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QMJ-3I-FKq" customClass="HymnViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6U-Nx-zru">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ttile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-uU-YcP">
-                                <rect key="frame" x="156" y="183" width="102" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-gW-o5k">
+                                <rect key="frame" x="99" y="340" width="216" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="216" id="TJq-fg-Ehv"/>
+                                    <constraint firstAttribute="height" constant="318" id="cJw-25-yZl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-gW-o5k">
-                                <rect key="frame" x="166" y="425" width="79" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-uU-YcP">
+                                <rect key="frame" x="33.5" y="234" width="347" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="347" id="BSr-ZE-5ZS"/>
+                                    <constraint firstAttribute="height" constant="68" id="UGW-3M-OUl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxm-Ol-Kzh">
-                                <rect key="frame" x="134" y="163" width="146" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxm-Ol-Kzh">
+                                <rect key="frame" x="89.5" y="164" width="235" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="X1r-qn-XKB"/>
+                                    <constraint firstAttribute="height" constant="35" id="zEW-74-jQp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kxm-Ol-Kzh" firstAttribute="top" secondItem="aBv-xS-hkN" secondAttribute="top" constant="24" id="HXL-TN-nFL"/>
+                            <constraint firstItem="kxm-Ol-Kzh" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="IWl-Q4-f2j"/>
+                            <constraint firstItem="kOe-gW-o5k" firstAttribute="top" secondItem="FMR-uU-YcP" secondAttribute="bottom" constant="38" id="aZz-hu-3SG"/>
+                            <constraint firstItem="FMR-uU-YcP" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="cCp-Qm-7cB"/>
+                            <constraint firstItem="FMR-uU-YcP" firstAttribute="top" secondItem="kxm-Ol-Kzh" secondAttribute="bottom" constant="35" id="cII-6w-MFc"/>
+                            <constraint firstItem="kOe-gW-o5k" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="omi-GR-y7g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aBv-xS-hkN"/>
                     </view>
                     <navigationItem key="navigationItem" title="#255" id="ZZb-Zd-euC">
@@ -336,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce7-kR-eeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6316" y="272"/>
+            <point key="canvasLocation" x="6315.9420289855079" y="271.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q0w-St-YOB">
@@ -362,10 +424,22 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="gobackward" catalog="system" width="121" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="tab favorites" width="30" height="30"/>
         <image name="tab index" width="30" height="30"/>
         <image name="tab number" width="30" height="30"/>
         <image name="tab settings" width="30" height="30"/>
+        <namedColor name="bar back color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bar title color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="filter background">
+            <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="global tint">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

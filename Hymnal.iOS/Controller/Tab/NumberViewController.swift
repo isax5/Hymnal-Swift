@@ -33,12 +33,22 @@ class NumberViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "showHymn":
-            if let destination = segue.destination as? HymnViewController {
-                destination.hymn = sender as? Hymn ?? nil
+            if let navVC = segue.destination as? UINavigationController {
+                if let destination = navVC.viewControllers.first as? HymnViewController {
+                    destination.hymn = sender as? Hymn ?? nil
+                }
             }
         default:
             return
         }
+        
+//        switch segue.destination {
+//        case let destination as HymnViewController:
+//            destination.hymn = sender as? Hymn ?? nil
+//            break
+//        default:
+//            break
+//        }
     }
     
     

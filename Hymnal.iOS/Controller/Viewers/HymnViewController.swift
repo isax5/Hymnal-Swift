@@ -18,6 +18,7 @@ class HymnViewController: UIViewController {
         super.viewDidLoad()
         
         if let h = hymn {
+            title = "#\(h.Number)"
             hymnNumber.text = "\(h.Number)"
             hymnTitle.text = h.Title
             hymnContent.text = h.Content
@@ -31,14 +32,24 @@ class HymnViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func musicSheetPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: K.Segue.ShowMusicSheet, sender: hymn)
     }
-    */
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        switch segue.identifier {
+        case K.Segue.ShowMusicSheet:
+            if let destination = segue.destination as? MusicSheetViewController, let h = sender as? Hymn {
+                
+                destination.hymn = h
+            }
+            
+        default:
+            break
+        }
+    }
 
 }

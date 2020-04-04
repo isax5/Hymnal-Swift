@@ -39,6 +39,9 @@
 		6A3B850B242F8E5700D845F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */; };
 		6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850E242FB26700D845F2 /* HymnViewController.swift */; };
 		6A3B8514242FCB0100D845F2 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8513242FCB0100D845F2 /* SearchTableViewController.swift */; };
+		6AABECED2438951300B40795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEC2438951300B40795 /* Constants.swift */; };
+		6AABECEF243895E500B40795 /* MusicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEE243895E500B40795 /* MusicSheetViewController.swift */; };
+		6AABECF12438A19D00B40795 /* HymnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECF02438A19D00B40795 /* HymnManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,10 @@
 		6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6A3B850E242FB26700D845F2 /* HymnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnViewController.swift; sourceTree = "<group>"; };
 		6A3B8513242FCB0100D845F2 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		6AABECEC2438951300B40795 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6AABECEE243895E500B40795 /* MusicSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewController.swift; sourceTree = "<group>"; };
+		6AABECF02438A19D00B40795 /* HymnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnManager.swift; sourceTree = "<group>"; };
+		6AB7EA1C243752B1004DA4B8 /* Hymnal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hymnal.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,11 +311,13 @@
 		6A05B3AE242F74490096DBCD /* Hymnal.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6AB7EA1C243752B1004DA4B8 /* Hymnal.entitlements */,
+				6A05B3AF242F74490096DBCD /* AppDelegate.swift */,
+				6A05B3B1242F74490096DBCD /* SceneDelegate.swift */,
 				6A05B3E2242F75470096DBCD /* Controller */,
 				6A05B3E0242F753B0096DBCD /* View */,
 				6A05B3DF242F75210096DBCD /* Model */,
-				6A05B3B1242F74490096DBCD /* SceneDelegate.swift */,
-				6A05B3AF242F74490096DBCD /* AppDelegate.swift */,
+				6AABECEC2438951300B40795 /* Constants.swift */,
 				6A05B3BA242F744A0096DBCD /* Assets.xcassets */,
 				6A05B3BF242F744A0096DBCD /* Info.plist */,
 			);
@@ -337,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				6A05B3E3242F75A00096DBCD /* Hymn.swift */,
+				6AABECF02438A19D00B40795 /* HymnManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				6A3B850E242FB26700D845F2 /* HymnViewController.swift */,
+				6AABECEE243895E500B40795 /* MusicSheetViewController.swift */,
 			);
 			path = Viewers;
 			sourceTree = "<group>";
@@ -770,14 +781,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A05B3B0242F74490096DBCD /* AppDelegate.swift in Sources */,
+				6AABECED2438951300B40795 /* Constants.swift in Sources */,
 				6A05B3E4242F75A00096DBCD /* Hymn.swift in Sources */,
 				6A3B8508242F8E3300D845F2 /* FavoritesViewController.swift in Sources */,
 				6A05B3B2242F74490096DBCD /* SceneDelegate.swift in Sources */,
 				6A3B8502242F8C2B00D845F2 /* ViewController.swift in Sources */,
+				6AABECF12438A19D00B40795 /* HymnManager.swift in Sources */,
 				6A3B8504242F8DE100D845F2 /* NumberViewController.swift in Sources */,
 				6A3B8506242F8E1500D845F2 /* IndexViewController.swift in Sources */,
 				6A3B8514242FCB0100D845F2 /* SearchTableViewController.swift in Sources */,
 				6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */,
+				6AABECEF243895E500B40795 /* MusicSheetViewController.swift in Sources */,
 				6A3B850B242F8E5700D845F2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1771,6 +1785,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Hymnal.iOS/Hymnal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1803,6 +1818,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isaacTesting.Hymnal-iOS";
 				PRODUCT_NAME = Hymnal;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1843,6 +1859,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Hymnal.iOS/Hymnal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1868,6 +1885,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isaacTesting.Hymnal-iOS";
 				PRODUCT_NAME = Hymnal;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;

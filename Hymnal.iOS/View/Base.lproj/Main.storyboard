@@ -79,7 +79,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numberTextField" destination="Eer-PC-Iv0" id="S9G-z2-DbE"/>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="showHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="nUA-ND-jpF"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymnal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="nUA-ND-jpF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -94,8 +94,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Index View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="123.5" y="426.5" width="167.5" height="43"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Index" id="KMr-Yr-InR"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Efn-qt-MCR"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymnal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Efn-qt-MCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -152,17 +152,36 @@
                     <view key="view" contentMode="scaleToFill" id="dFP-5T-0Wg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Favorites View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ORH-BC-v6m">
+                                <rect key="frame" x="95.5" y="426.5" width="223" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kG-1f-ayF">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6kG-1f-ayF" firstAttribute="centerX" secondItem="dFP-5T-0Wg" secondAttribute="centerX" id="JBM-36-BkR"/>
+                            <constraint firstItem="6kG-1f-ayF" firstAttribute="top" secondItem="ORH-BC-v6m" secondAttribute="bottom" constant="8" id="Mb4-F1-UDl"/>
+                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerY" secondItem="dFP-5T-0Wg" secondAttribute="centerY" id="W7y-o8-vhi"/>
+                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerX" secondItem="dFP-5T-0Wg" secondAttribute="centerX" id="wob-k1-XVQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8OE-LI-35Y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="j8T-tW-xVb"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fl9-vI-lIP"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymnal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fl9-vI-lIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4X-zB-QCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657.9710144927537" y="1028.5714285714284"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="1027.9017857142858"/>
         </scene>
         <!--Settings-->
         <scene sceneID="cDT-6v-5Gn">
@@ -171,7 +190,28 @@
                     <view key="view" contentMode="scaleToFill" id="cFd-1P-aws">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Settings View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Due-NT-Qrk">
+                                <rect key="frame" x="101.5" y="426.5" width="211" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC1-IP-WHZ">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="2kO-4l-v1Q"/>
+                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="top" secondItem="Due-NT-Qrk" secondAttribute="bottom" constant="8" id="8QD-If-eQ9"/>
+                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="SiY-mP-4CO"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="aLc-rg-JPR"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="bGi-ZI-DRO"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="oXf-3l-Nh4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0PM-Ry-Qgj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="DrS-A9-qCj"/>
@@ -297,7 +337,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="zCc-tr-uMs" detailTextLabel="Kqm-eB-q8Q" style="IBUITableViewCellStyleSubtitle" id="npN-4i-DoA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="zCc-tr-uMs" detailTextLabel="Kqm-eB-q8Q" style="IBUITableViewCellStyleSubtitle" id="npN-4i-DoA">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="npN-4i-DoA" id="1lM-xR-DQU">
@@ -384,9 +424,14 @@
                         <viewLayoutGuide key="safeArea" id="aBv-xS-hkN"/>
                     </view>
                     <navigationItem key="navigationItem" title="#255" id="ZZb-Zd-euC">
-                        <barButtonItem key="leftBarButtonItem" title="close" id="UU6-DK-V29">
+                        <barButtonItem key="leftBarButtonItem" title="close" image="xmark" catalog="system" id="UU6-DK-V29">
                             <connections>
                                 <action selector="closePressed:" destination="QMJ-3I-FKq" id="Ubk-fe-2jD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="piano sheet" image="music.note.list" catalog="system" id="fX0-Vo-rZn">
+                            <connections>
+                                <action selector="musicSheetPressed:" destination="QMJ-3I-FKq" id="Jo3-Fo-UTF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -394,6 +439,7 @@
                         <outlet property="hymnContent" destination="kOe-gW-o5k" id="gJ0-Tc-Pjl"/>
                         <outlet property="hymnNumber" destination="kxm-Ol-Kzh" id="Epb-ia-2U0"/>
                         <outlet property="hymnTitle" destination="FMR-uU-YcP" id="Avy-R8-WCV"/>
+                        <segue destination="euR-Lh-u85" kind="show" identifier="ShowMusicSheet" id="8xo-8T-ZiM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce7-kR-eeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -418,19 +464,37 @@
             </objects>
             <point key="canvasLocation" x="5406" y="272"/>
         </scene>
+        <!--Music Sheet View Controller-->
+        <scene sceneID="eWl-KV-NvQ">
+            <objects>
+                <viewController id="euR-Lh-u85" customClass="MusicSheetViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o1f-MA-DyP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Hqy-sW-f6c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7ZU-tD-nbg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFv-DG-sUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7243" y="272"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nUA-ND-jpF"/>
+        <segue reference="Fl9-vI-lIP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>
         <image name="background" width="375" height="667"/>
         <image name="gobackward" catalog="system" width="121" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="music.note.list" catalog="system" width="128" height="113"/>
         <image name="tab favorites" width="30" height="30"/>
         <image name="tab index" width="30" height="30"/>
         <image name="tab number" width="30" height="30"/>
         <image name="tab settings" width="30" height="30"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="bar back color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

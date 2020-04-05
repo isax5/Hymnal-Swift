@@ -19,6 +19,7 @@ class HymnViewController: UIViewController {
         
         if let h = hymn {
             title = "#\(h.Number)"
+            
             hymnNumber.text = "\(h.Number)"
             hymnTitle.text = h.Title
             hymnContent.text = h.Content

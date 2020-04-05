@@ -13,20 +13,26 @@ class NumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        numberTextField.delegate = self
     }
     
     
     @IBAction func openButtonPressed(_ sender: UIButton) {
-        if let number = numberTextField.text {
+        
+        if let text = numberTextField.text, let number = Int(text) {
             
-            if number.isEmpty {
-                numberTextField.becomeFirstResponder()
+            // Fetch hymn
+            let hymnService = HymnManager.sharedInstance
+            
+            let language = HymnalLanguage(Id: "", TwoLetterISOLanguageName: "", Name: "", Detail: "", HymnsFileName: "", ThematicHymnsFileName: "", SungMusic: "", InstrumentalMusic: "", HymnsSheetsFileName: "")
+            
+            hymnService.FetchHymn(number: number, language: language) { (hymn) in
+                self.performSegue(withIdentifier: K.Segue.ShowHymnal, sender: hymn)
             }
-            else {
-                let hymn = Hymn(Number: Int(number) ?? 0, Title: "Titulo de prueba", Content: "Contenido de prueba")
-                performSegue(withIdentifier: K.Segue.ShowHymnal, sender: hymn)
-            }
+            
+        } else {
+            
+            numberTextField.becomeFirstResponder()
         }
     }
     
@@ -49,3 +55,16 @@ class NumberViewController: UIViewController {
     }
 
 }
+
+//MARK: - UITextFieldDelegate
+extension NumberViewController : UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+//        let allowedCharacters = CharacterSet(charactersIn:"0123456789")
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
+}
+

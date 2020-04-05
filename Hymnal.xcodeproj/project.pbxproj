@@ -39,6 +39,7 @@
 		6A3B850B242F8E5700D845F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */; };
 		6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850E242FB26700D845F2 /* HymnViewController.swift */; };
 		6A3B8514242FCB0100D845F2 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8513242FCB0100D845F2 /* SearchTableViewController.swift */; };
+		6A8AFED52438E03600DAA187 /* HymnalLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8AFED42438E03600DAA187 /* HymnalLanguage.swift */; };
 		6AABECED2438951300B40795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEC2438951300B40795 /* Constants.swift */; };
 		6AABECEF243895E500B40795 /* MusicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEE243895E500B40795 /* MusicSheetViewController.swift */; };
 		6AABECF12438A19D00B40795 /* HymnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECF02438A19D00B40795 /* HymnManager.swift */; };
@@ -139,6 +140,7 @@
 		6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6A3B850E242FB26700D845F2 /* HymnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnViewController.swift; sourceTree = "<group>"; };
 		6A3B8513242FCB0100D845F2 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		6A8AFED42438E03600DAA187 /* HymnalLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnalLanguage.swift; sourceTree = "<group>"; };
 		6AABECEC2438951300B40795 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6AABECEE243895E500B40795 /* MusicSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewController.swift; sourceTree = "<group>"; };
 		6AABECF02438A19D00B40795 /* HymnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnManager.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				6A05B3E3242F75A00096DBCD /* Hymn.swift */,
 				6AABECF02438A19D00B40795 /* HymnManager.swift */,
+				6A8AFED42438E03600DAA187 /* HymnalLanguage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				6A3B8514242FCB0100D845F2 /* SearchTableViewController.swift in Sources */,
 				6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */,
 				6AABECEF243895E500B40795 /* MusicSheetViewController.swift in Sources */,
+				6A8AFED52438E03600DAA187 /* HymnalLanguage.swift in Sources */,
 				6A3B850B242F8E5700D845F2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

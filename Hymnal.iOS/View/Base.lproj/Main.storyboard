@@ -27,7 +27,7 @@
                                 <rect key="frame" x="147" y="420" width="120" height="56"/>
                                 <color key="backgroundColor" name="primary color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="VVf-qj-Evb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="VVf-qj-Evb"/>
                                     <constraint firstAttribute="height" constant="56" id="fEu-ie-UOh"/>
                                 </constraints>
                                 <state key="normal" title="Open">
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="134" y="318" width="146" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="K9P-Xj-Sqh"/>
-                                    <constraint firstAttribute="width" constant="146" id="dZu-bF-g4a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="dZu-bF-g4a"/>
                                 </constraints>
                                 <color key="textColor" name="primary color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -52,18 +52,18 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="1Qo-do-vVP" secondAttribute="bottom" id="0Hu-07-8v0"/>
                             <constraint firstItem="q3F-na-v5O" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="66e-LB-j0f"/>
-                            <constraint firstAttribute="trailing" secondItem="q3F-na-v5O" secondAttribute="trailing" id="C4z-GV-aXH"/>
-                            <constraint firstAttribute="trailing" secondItem="1Qo-do-vVP" secondAttribute="trailing" id="KvD-5M-qzH"/>
+                            <constraint firstItem="jLN-e7-HZx" firstAttribute="trailing" secondItem="q3F-na-v5O" secondAttribute="trailing" id="C4z-GV-aXH"/>
+                            <constraint firstItem="jLN-e7-HZx" firstAttribute="trailing" secondItem="1Qo-do-vVP" secondAttribute="trailing" id="KvD-5M-qzH"/>
                             <constraint firstItem="hyg-SD-hEJ" firstAttribute="top" secondItem="Eer-PC-Iv0" secondAttribute="bottom" constant="30" id="NoV-IV-78U"/>
-                            <constraint firstItem="1Qo-do-vVP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Tq5-nF-3qv"/>
+                            <constraint firstItem="1Qo-do-vVP" firstAttribute="leading" secondItem="jLN-e7-HZx" secondAttribute="leading" id="Tq5-nF-3qv"/>
                             <constraint firstItem="1Qo-do-vVP" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="YHH-B5-dyv"/>
-                            <constraint firstItem="q3F-na-v5O" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="efz-fH-qjq"/>
-                            <constraint firstItem="Eer-PC-Iv0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="f24-uf-197"/>
+                            <constraint firstItem="q3F-na-v5O" firstAttribute="leading" secondItem="jLN-e7-HZx" secondAttribute="leading" id="efz-fH-qjq"/>
+                            <constraint firstItem="Eer-PC-Iv0" firstAttribute="centerX" secondItem="jLN-e7-HZx" secondAttribute="centerX" id="f24-uf-197"/>
                             <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="l3X-rR-Str"/>
                             <constraint firstAttribute="bottom" secondItem="q3F-na-v5O" secondAttribute="bottom" id="me9-8z-HLA"/>
-                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="v6H-Na-BUp"/>
+                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerX" secondItem="jLN-e7-HZx" secondAttribute="centerX" id="v6H-Na-BUp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <viewLayoutGuide key="safeArea" id="jLN-e7-HZx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adventist Hymnal" id="sHJ-bi-Obc">
                         <barButtonItem key="leftBarButtonItem" title="records" image="gobackward" catalog="system" id="cAi-Gk-Bsf">
@@ -110,10 +110,10 @@
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstItem="YlJ-Rj-esv" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <viewLayoutGuide key="safeArea" id="YlJ-Rj-esv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Index" id="KMr-Yr-InR"/>
                     <connections>
@@ -167,12 +167,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6kG-1f-ayF" firstAttribute="centerX" secondItem="dFP-5T-0Wg" secondAttribute="centerX" id="JBM-36-BkR"/>
+                            <constraint firstItem="6kG-1f-ayF" firstAttribute="centerX" secondItem="ha2-GC-VsH" secondAttribute="centerX" id="JBM-36-BkR"/>
                             <constraint firstItem="6kG-1f-ayF" firstAttribute="top" secondItem="ORH-BC-v6m" secondAttribute="bottom" constant="8" id="Mb4-F1-UDl"/>
                             <constraint firstItem="ORH-BC-v6m" firstAttribute="centerY" secondItem="dFP-5T-0Wg" secondAttribute="centerY" id="W7y-o8-vhi"/>
-                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerX" secondItem="dFP-5T-0Wg" secondAttribute="centerX" id="wob-k1-XVQ"/>
+                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerX" secondItem="ha2-GC-VsH" secondAttribute="centerX" id="wob-k1-XVQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8OE-LI-35Y"/>
+                        <viewLayoutGuide key="safeArea" id="ha2-GC-VsH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="j8T-tW-xVb"/>
                     <connections>
@@ -207,12 +207,12 @@
                         <constraints>
                             <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="2kO-4l-v1Q"/>
                             <constraint firstItem="hC1-IP-WHZ" firstAttribute="top" secondItem="Due-NT-Qrk" secondAttribute="bottom" constant="8" id="8QD-If-eQ9"/>
-                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="SiY-mP-4CO"/>
-                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="aLc-rg-JPR"/>
-                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="cFd-1P-aws" secondAttribute="centerX" id="bGi-ZI-DRO"/>
+                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="SiY-mP-4CO"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="aLc-rg-JPR"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="bGi-ZI-DRO"/>
                             <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="oXf-3l-Nh4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0PM-Ry-Qgj"/>
+                        <viewLayoutGuide key="safeArea" id="4cA-Gi-KAb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="DrS-A9-qCj"/>
                 </viewController>
@@ -320,7 +320,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="sLl-OC-JI5"/>
+                        <viewLayoutGuide key="safeArea" id="tkk-iN-aaK"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="zoh-01-ILM"/>
                 </viewController>
@@ -377,52 +377,6 @@
         <scene sceneID="7ah-Vk-Wz9">
             <objects>
                 <viewController id="QMJ-3I-FKq" customClass="HymnViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q6U-Nx-zru">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-gW-o5k">
-                                <rect key="frame" x="99" y="340" width="216" height="318"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="216" id="TJq-fg-Ehv"/>
-                                    <constraint firstAttribute="height" constant="318" id="cJw-25-yZl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-uU-YcP">
-                                <rect key="frame" x="33.5" y="234" width="347" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="347" id="BSr-ZE-5ZS"/>
-                                    <constraint firstAttribute="height" constant="68" id="UGW-3M-OUl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxm-Ol-Kzh">
-                                <rect key="frame" x="89.5" y="164" width="235" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="X1r-qn-XKB"/>
-                                    <constraint firstAttribute="height" constant="35" id="zEW-74-jQp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="kxm-Ol-Kzh" firstAttribute="top" secondItem="aBv-xS-hkN" secondAttribute="top" constant="24" id="HXL-TN-nFL"/>
-                            <constraint firstItem="kxm-Ol-Kzh" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="IWl-Q4-f2j"/>
-                            <constraint firstItem="kOe-gW-o5k" firstAttribute="top" secondItem="FMR-uU-YcP" secondAttribute="bottom" constant="38" id="aZz-hu-3SG"/>
-                            <constraint firstItem="FMR-uU-YcP" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="cCp-Qm-7cB"/>
-                            <constraint firstItem="FMR-uU-YcP" firstAttribute="top" secondItem="kxm-Ol-Kzh" secondAttribute="bottom" constant="35" id="cII-6w-MFc"/>
-                            <constraint firstItem="kOe-gW-o5k" firstAttribute="centerX" secondItem="q6U-Nx-zru" secondAttribute="centerX" id="omi-GR-y7g"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aBv-xS-hkN"/>
-                    </view>
                     <navigationItem key="navigationItem" title="#255" id="ZZb-Zd-euC">
                         <barButtonItem key="leftBarButtonItem" title="close" image="xmark" catalog="system" id="UU6-DK-V29">
                             <connections>
@@ -435,10 +389,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
-                        <outlet property="hymnContent" destination="kOe-gW-o5k" id="gJ0-Tc-Pjl"/>
-                        <outlet property="hymnNumber" destination="kxm-Ol-Kzh" id="Epb-ia-2U0"/>
-                        <outlet property="hymnTitle" destination="FMR-uU-YcP" id="Avy-R8-WCV"/>
                         <segue destination="euR-Lh-u85" kind="show" identifier="ShowMusicSheet" id="8xo-8T-ZiM"/>
                     </connections>
                 </viewController>
@@ -472,7 +424,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Hqy-sW-f6c"/>
+                        <viewLayoutGuide key="safeArea" id="298-T6-DaC"/>
                     </view>
                     <navigationItem key="navigationItem" id="7ZU-tD-nbg"/>
                 </viewController>
@@ -482,7 +434,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fl9-vI-lIP"/>
+        <segue reference="Efn-qt-MCR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>

@@ -14,8 +14,6 @@ class MusicSheetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Recived Hymn: \(String(describing: hymn))")
-        
         if let h = hymn {
             title = "#\(h.Number)"
         }

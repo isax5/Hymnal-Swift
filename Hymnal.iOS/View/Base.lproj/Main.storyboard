@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -52,18 +52,18 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="1Qo-do-vVP" secondAttribute="bottom" id="0Hu-07-8v0"/>
                             <constraint firstItem="q3F-na-v5O" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="66e-LB-j0f"/>
-                            <constraint firstItem="jLN-e7-HZx" firstAttribute="trailing" secondItem="q3F-na-v5O" secondAttribute="trailing" id="C4z-GV-aXH"/>
-                            <constraint firstItem="jLN-e7-HZx" firstAttribute="trailing" secondItem="1Qo-do-vVP" secondAttribute="trailing" id="KvD-5M-qzH"/>
+                            <constraint firstItem="eyv-4o-Qzw" firstAttribute="trailing" secondItem="q3F-na-v5O" secondAttribute="trailing" id="C4z-GV-aXH"/>
+                            <constraint firstItem="eyv-4o-Qzw" firstAttribute="trailing" secondItem="1Qo-do-vVP" secondAttribute="trailing" id="KvD-5M-qzH"/>
                             <constraint firstItem="hyg-SD-hEJ" firstAttribute="top" secondItem="Eer-PC-Iv0" secondAttribute="bottom" constant="30" id="NoV-IV-78U"/>
-                            <constraint firstItem="1Qo-do-vVP" firstAttribute="leading" secondItem="jLN-e7-HZx" secondAttribute="leading" id="Tq5-nF-3qv"/>
+                            <constraint firstItem="1Qo-do-vVP" firstAttribute="leading" secondItem="eyv-4o-Qzw" secondAttribute="leading" id="Tq5-nF-3qv"/>
                             <constraint firstItem="1Qo-do-vVP" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="YHH-B5-dyv"/>
-                            <constraint firstItem="q3F-na-v5O" firstAttribute="leading" secondItem="jLN-e7-HZx" secondAttribute="leading" id="efz-fH-qjq"/>
-                            <constraint firstItem="Eer-PC-Iv0" firstAttribute="centerX" secondItem="jLN-e7-HZx" secondAttribute="centerX" id="f24-uf-197"/>
+                            <constraint firstItem="q3F-na-v5O" firstAttribute="leading" secondItem="eyv-4o-Qzw" secondAttribute="leading" id="efz-fH-qjq"/>
+                            <constraint firstItem="Eer-PC-Iv0" firstAttribute="centerX" secondItem="eyv-4o-Qzw" secondAttribute="centerX" id="f24-uf-197"/>
                             <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="l3X-rR-Str"/>
                             <constraint firstAttribute="bottom" secondItem="q3F-na-v5O" secondAttribute="bottom" id="me9-8z-HLA"/>
-                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerX" secondItem="jLN-e7-HZx" secondAttribute="centerX" id="v6H-Na-BUp"/>
+                            <constraint firstItem="hyg-SD-hEJ" firstAttribute="centerX" secondItem="eyv-4o-Qzw" secondAttribute="centerX" id="v6H-Na-BUp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jLN-e7-HZx"/>
+                        <viewLayoutGuide key="safeArea" id="eyv-4o-Qzw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adventist Hymnal" id="sHJ-bi-Obc">
                         <barButtonItem key="leftBarButtonItem" title="records" image="gobackward" catalog="system" id="cAi-Gk-Bsf">
@@ -110,10 +110,10 @@
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstItem="YlJ-Rj-esv" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstItem="djF-jH-rwY" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YlJ-Rj-esv"/>
+                        <viewLayoutGuide key="safeArea" id="djF-jH-rwY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Index" id="KMr-Yr-InR"/>
                     <connections>
@@ -167,12 +167,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6kG-1f-ayF" firstAttribute="centerX" secondItem="ha2-GC-VsH" secondAttribute="centerX" id="JBM-36-BkR"/>
+                            <constraint firstItem="6kG-1f-ayF" firstAttribute="centerX" secondItem="ubb-73-gYW" secondAttribute="centerX" id="JBM-36-BkR"/>
                             <constraint firstItem="6kG-1f-ayF" firstAttribute="top" secondItem="ORH-BC-v6m" secondAttribute="bottom" constant="8" id="Mb4-F1-UDl"/>
                             <constraint firstItem="ORH-BC-v6m" firstAttribute="centerY" secondItem="dFP-5T-0Wg" secondAttribute="centerY" id="W7y-o8-vhi"/>
-                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerX" secondItem="ha2-GC-VsH" secondAttribute="centerX" id="wob-k1-XVQ"/>
+                            <constraint firstItem="ORH-BC-v6m" firstAttribute="centerX" secondItem="ubb-73-gYW" secondAttribute="centerX" id="wob-k1-XVQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ha2-GC-VsH"/>
+                        <viewLayoutGuide key="safeArea" id="ubb-73-gYW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="j8T-tW-xVb"/>
                     <connections>
@@ -207,12 +207,12 @@
                         <constraints>
                             <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="2kO-4l-v1Q"/>
                             <constraint firstItem="hC1-IP-WHZ" firstAttribute="top" secondItem="Due-NT-Qrk" secondAttribute="bottom" constant="8" id="8QD-If-eQ9"/>
-                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="SiY-mP-4CO"/>
-                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="aLc-rg-JPR"/>
-                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="4cA-Gi-KAb" secondAttribute="centerX" id="bGi-ZI-DRO"/>
+                            <constraint firstItem="hC1-IP-WHZ" firstAttribute="centerX" secondItem="5He-5h-H75" secondAttribute="centerX" id="SiY-mP-4CO"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="5He-5h-H75" secondAttribute="centerX" id="aLc-rg-JPR"/>
+                            <constraint firstItem="Due-NT-Qrk" firstAttribute="centerX" secondItem="5He-5h-H75" secondAttribute="centerX" id="bGi-ZI-DRO"/>
                             <constraint firstItem="Due-NT-Qrk" firstAttribute="centerY" secondItem="cFd-1P-aws" secondAttribute="centerY" id="oXf-3l-Nh4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4cA-Gi-KAb"/>
+                        <viewLayoutGuide key="safeArea" id="5He-5h-H75"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="DrS-A9-qCj"/>
                 </viewController>
@@ -320,7 +320,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="tkk-iN-aaK"/>
+                        <viewLayoutGuide key="safeArea" id="OKk-5a-Z3l"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="zoh-01-ILM"/>
                 </viewController>
@@ -377,6 +377,66 @@
         <scene sceneID="7ah-Vk-Wz9">
             <objects>
                 <viewController id="QMJ-3I-FKq" customClass="HymnViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Skq-El-39g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCE-fR-tPT">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqe-IZ-IWL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5h-MT-DEL">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="3Wa-pi-Iov"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vi-xb-Tv4">
+                                                <rect key="frame" x="8" y="125" width="398" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="A9f-ie-x4q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Q5h-MT-DEL" firstAttribute="top" secondItem="xqe-IZ-IWL" secondAttribute="top" id="3yv-nN-9iA"/>
+                                            <constraint firstAttribute="trailing" secondItem="8vi-xb-Tv4" secondAttribute="trailing" constant="8" id="7C0-Tk-9hh"/>
+                                            <constraint firstItem="8vi-xb-Tv4" firstAttribute="leading" secondItem="xqe-IZ-IWL" secondAttribute="leading" constant="8" id="FL4-hh-zDc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q5h-MT-DEL" secondAttribute="trailing" constant="8" id="GJP-JA-AP4"/>
+                                            <constraint firstAttribute="bottom" secondItem="8vi-xb-Tv4" secondAttribute="bottom" constant="20" id="RoR-I9-WCx"/>
+                                            <constraint firstItem="8vi-xb-Tv4" firstAttribute="top" secondItem="Q5h-MT-DEL" secondAttribute="bottom" constant="25" id="dVp-rx-y1K"/>
+                                            <constraint firstItem="Q5h-MT-DEL" firstAttribute="leading" secondItem="xqe-IZ-IWL" secondAttribute="leading" constant="8" id="gSd-Hm-K52"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xqe-IZ-IWL" secondAttribute="trailing" id="ESO-NP-8Fa"/>
+                                    <constraint firstItem="xqe-IZ-IWL" firstAttribute="leading" secondItem="oCE-fR-tPT" secondAttribute="leading" id="FnW-j8-aJH"/>
+                                    <constraint firstItem="xqe-IZ-IWL" firstAttribute="top" secondItem="oCE-fR-tPT" secondAttribute="top" id="a1M-Tt-Re2"/>
+                                    <constraint firstAttribute="width" secondItem="xqe-IZ-IWL" secondAttribute="width" id="dQf-tk-V1o"/>
+                                    <constraint firstItem="xqe-IZ-IWL" firstAttribute="height" secondItem="oCE-fR-tPT" secondAttribute="height" priority="250" id="fCO-7q-cCa"/>
+                                    <constraint firstAttribute="bottom" secondItem="xqe-IZ-IWL" secondAttribute="bottom" id="peF-MH-vmu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oCE-fR-tPT" firstAttribute="trailing" secondItem="a1w-ui-lQj" secondAttribute="trailing" id="D5u-y4-eS2"/>
+                            <constraint firstItem="oCE-fR-tPT" firstAttribute="leading" secondItem="a1w-ui-lQj" secondAttribute="leading" id="U0n-wf-WJH"/>
+                            <constraint firstItem="oCE-fR-tPT" firstAttribute="top" secondItem="a1w-ui-lQj" secondAttribute="top" id="Yl3-VM-VkZ"/>
+                            <constraint firstItem="oCE-fR-tPT" firstAttribute="bottom" secondItem="a1w-ui-lQj" secondAttribute="bottom" id="nEO-cC-93k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a1w-ui-lQj"/>
+                    </view>
                     <navigationItem key="navigationItem" title="#255" id="ZZb-Zd-euC">
                         <barButtonItem key="leftBarButtonItem" title="close" image="xmark" catalog="system" id="UU6-DK-V29">
                             <connections>
@@ -389,14 +449,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="hymnContent" destination="8vi-xb-Tv4" id="aJy-DN-3cQ"/>
+                        <outlet property="hymnTitle" destination="Q5h-MT-DEL" id="y5w-qA-TKN"/>
                         <segue destination="euR-Lh-u85" kind="show" identifier="ShowMusicSheet" id="8xo-8T-ZiM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce7-kR-eeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6315.9420289855079" y="271.875"/>
+            <point key="canvasLocation" x="6314" y="272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q0w-St-YOB">
@@ -424,7 +485,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="298-T6-DaC"/>
+                        <viewLayoutGuide key="safeArea" id="hur-Lu-K0I"/>
                     </view>
                     <navigationItem key="navigationItem" id="7ZU-tD-nbg"/>
                 </viewController>
@@ -434,7 +495,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Efn-qt-MCR"/>
+        <segue reference="Fl9-vI-lIP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>

@@ -18,7 +18,7 @@ class SearchTableViewController: UITableViewController {
         // 2
         searchController.obscuresBackgroundDuringPresentation = false
         // 3
-        searchController.searchBar.placeholder = "Search Candies"
+        searchController.searchBar.placeholder = "Search"
         // 4
         navigationItem.searchController = searchController
         // 5

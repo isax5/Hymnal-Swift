@@ -8,7 +8,6 @@
 import UIKit
 
 class HymnViewController: UIViewController {
-    @IBOutlet weak var hymnNumber: UILabel!
     @IBOutlet weak var hymnTitle: UILabel!
     @IBOutlet weak var hymnContent: UILabel!
     
@@ -20,7 +19,6 @@ class HymnViewController: UIViewController {
         if let h = hymn {
             title = "#\(h.Number)"
             
-            hymnNumber.text = "\(h.Number)"
             hymnTitle.text = h.Title
             hymnContent.text = h.Content
         }

@@ -100,6 +100,7 @@ class SearchTableViewController: UITableViewController {
 
 }
 
+//MARK: - UISearchResultsUpdating
 extension SearchTableViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     // TODO

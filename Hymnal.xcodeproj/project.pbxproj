@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FB13329DF25EB0772C5194 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A5578E21A51E42A448EAB9 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */; };
+		28CB50E8904C085EBCFA8257 /* Pods_Hymnal_TV_Hymnal_TVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB605FBE89D05A6A277AB5C /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */; };
+		4AB224E93C194253A6E6FE74 /* Pods_Hymnal_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C56BD5B072D53EF3BF7874 /* Pods_Hymnal_iOSTests.framework */; };
+		609B85596A4CF10EF133FD36 /* Pods_Hymnal_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE5C88E3ED5D6C265337D6A /* Pods_Hymnal_iOS.framework */; };
+		69A66D485C63EF55AA509A84 /* Pods_Hymnal_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CE528395057A5C77FB115 /* Pods_Hymnal_TV.framework */; };
 		6A05B34C242F73370096DBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05B34B242F73370096DBCD /* AppDelegate.swift */; };
 		6A05B34E242F73370096DBCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05B34D242F73370096DBCD /* FirstViewController.swift */; };
 		6A05B350242F73370096DBCD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05B34F242F73370096DBCD /* SecondViewController.swift */; };
@@ -43,6 +48,10 @@
 		6AABECED2438951300B40795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEC2438951300B40795 /* Constants.swift */; };
 		6AABECEF243895E500B40795 /* MusicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECEE243895E500B40795 /* MusicSheetViewController.swift */; };
 		6AABECF12438A19D00B40795 /* HymnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AABECF02438A19D00B40795 /* HymnManager.swift */; };
+		8652C8114ABDB1B60A459FA3 /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546FA253D4C3350EBC78613D /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */; };
+		8B6F347057C09D37180261DB /* Pods_Hymnal_TVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F828D5E13146A106A9E63F /* Pods_Hymnal_TVTests.framework */; };
+		9C2F94D3590AF459B177B4AD /* Pods_Hymnal_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18B3191D076B31A5CD9ACBB /* Pods_Hymnal_OSXTests.framework */; };
+		B3FDD7AA2AC1FA6FC1A993B9 /* Pods_Hymnal_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614749C6BC49444B6AC8C6FD /* Pods_Hymnal_OSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +100,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20C796767DC5A4B921A35F40 /* Pods-Hymnal.OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSX.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		25C59A5DDBEFC7846AE0FDEB /* Pods-Hymnal.OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSXTests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32E298F115504A20C6745189 /* Pods-Hymnal.TVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TVTests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests.release.xcconfig"; sourceTree = "<group>"; };
+		39B939305FB9FF76459DFEFF /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43F828D5E13146A106A9E63F /* Pods_Hymnal_TVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A15BA3DB3A73E53AF2EBB35 /* Pods-Hymnal.OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSX.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX.release.xcconfig"; sourceTree = "<group>"; };
+		546FA253D4C3350EBC78613D /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSX_Hymnal_OSXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A5578E21A51E42A448EAB9 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOS_Hymnal_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614749C6BC49444B6AC8C6FD /* Pods_Hymnal_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A05B349242F73370096DBCD /* Hymnal.TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hymnal.TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A05B34B242F73370096DBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A05B34D242F73370096DBCD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +163,24 @@
 		6AABECEE243895E500B40795 /* MusicSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewController.swift; sourceTree = "<group>"; };
 		6AABECF02438A19D00B40795 /* HymnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnManager.swift; sourceTree = "<group>"; };
 		6AB7EA1C243752B1004DA4B8 /* Hymnal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hymnal.entitlements; sourceTree = "<group>"; };
+		6CE5C88E3ED5D6C265337D6A /* Pods_Hymnal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1ECF21D16C929E56BA54D4 /* Pods-Hymnal.TVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TVTests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		708500BC97587C296E22E2E5 /* Pods-Hymnal.OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSXTests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		708DC44F6B4A92E04C09F6A5 /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70E0B6EBC89904804F2C36B4 /* Pods-Hymnal.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOS.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		74E5942F103326DBEE676F64 /* Pods-Hymnal.TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TV.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV.release.xcconfig"; sourceTree = "<group>"; };
+		846C6D71102DF6D74E748EF2 /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D9C7199F6E813B1AFC090A3 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A18B3191D076B31A5CD9ACBB /* Pods_Hymnal_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CC06FEB50B68F8B652C4F8 /* Pods-Hymnal.iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5C56BD5B072D53EF3BF7874 /* Pods_Hymnal_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB605FBE89D05A6A277AB5C /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TV_Hymnal_TVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CE528395057A5C77FB115 /* Pods_Hymnal_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83E9CB50C9290D65AF0F5C2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB819F0C3EEFF86CFF3088C2 /* Pods-Hymnal.iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBA30A676620D30539F6D712 /* Pods-Hymnal.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.iOS.release.xcconfig"; path = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F5DA19CD328F9D157562FC26 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9278191F15A558A73B44078 /* Pods-Hymnal.TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hymnal.TV.debug.xcconfig"; path = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A66D485C63EF55AA509A84 /* Pods_Hymnal_TV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6F347057C09D37180261DB /* Pods_Hymnal_TVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CB50E8904C085EBCFA8257 /* Pods_Hymnal_TV_Hymnal_TVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FDD7AA2AC1FA6FC1A993B9 /* Pods_Hymnal_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2F94D3590AF459B177B4AD /* Pods_Hymnal_OSXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8652C8114ABDB1B60A459FA3 /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609B85596A4CF10EF133FD36 /* Pods_Hymnal_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB224E93C194253A6E6FE74 /* Pods_Hymnal_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +252,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FB13329DF25EB0772C5194 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092903FCBDDFFDC5DD75D44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614749C6BC49444B6AC8C6FD /* Pods_Hymnal_OSX.framework */,
+				546FA253D4C3350EBC78613D /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */,
+				A18B3191D076B31A5CD9ACBB /* Pods_Hymnal_OSXTests.framework */,
+				C90CE528395057A5C77FB115 /* Pods_Hymnal_TV.framework */,
+				BDB605FBE89D05A6A277AB5C /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */,
+				43F828D5E13146A106A9E63F /* Pods_Hymnal_TVTests.framework */,
+				6CE5C88E3ED5D6C265337D6A /* Pods_Hymnal_iOS.framework */,
+				55A5578E21A51E42A448EAB9 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */,
+				B5C56BD5B072D53EF3BF7874 /* Pods_Hymnal_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1305BB7BD2B0A4797DAEBFFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20C796767DC5A4B921A35F40 /* Pods-Hymnal.OSX.debug.xcconfig */,
+				4A15BA3DB3A73E53AF2EBB35 /* Pods-Hymnal.OSX.release.xcconfig */,
+				F5DA19CD328F9D157562FC26 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */,
+				9D9C7199F6E813B1AFC090A3 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */,
+				25C59A5DDBEFC7846AE0FDEB /* Pods-Hymnal.OSXTests.debug.xcconfig */,
+				708500BC97587C296E22E2E5 /* Pods-Hymnal.OSXTests.release.xcconfig */,
+				F9278191F15A558A73B44078 /* Pods-Hymnal.TV.debug.xcconfig */,
+				74E5942F103326DBEE676F64 /* Pods-Hymnal.TV.release.xcconfig */,
+				708DC44F6B4A92E04C09F6A5 /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */,
+				846C6D71102DF6D74E748EF2 /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */,
+				6E1ECF21D16C929E56BA54D4 /* Pods-Hymnal.TVTests.debug.xcconfig */,
+				32E298F115504A20C6745189 /* Pods-Hymnal.TVTests.release.xcconfig */,
+				70E0B6EBC89904804F2C36B4 /* Pods-Hymnal.iOS.debug.xcconfig */,
+				DBA30A676620D30539F6D712 /* Pods-Hymnal.iOS.release.xcconfig */,
+				39B939305FB9FF76459DFEFF /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */,
+				D83E9CB50C9290D65AF0F5C2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */,
+				DB819F0C3EEFF86CFF3088C2 /* Pods-Hymnal.iOSTests.debug.xcconfig */,
+				A8CC06FEB50B68F8B652C4F8 /* Pods-Hymnal.iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A05B2D2242F70D50096DBCD = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +315,8 @@
 				6A05B391242F73E10096DBCD /* Hymnal.OSXTests */,
 				6A05B39C242F73E10096DBCD /* Hymnal.OSXUITests */,
 				6A05B313242F72B60096DBCD /* Products */,
+				1305BB7BD2B0A4797DAEBFFD /* Pods */,
+				092903FCBDDFFDC5DD75D44C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,6 +514,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B370242F733A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.TV" */;
 			buildPhases = (
+				305192A1B9705D6FE8433C82 /* [CP] Check Pods Manifest.lock */,
 				6A05B345242F73370096DBCD /* Sources */,
 				6A05B346242F73370096DBCD /* Frameworks */,
 				6A05B347242F73370096DBCD /* Resources */,
@@ -442,6 +532,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B373242F733A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.TVTests" */;
 			buildPhases = (
+				AD697E579399A91EC174DCF0 /* [CP] Check Pods Manifest.lock */,
 				6A05B35A242F733A0096DBCD /* Sources */,
 				6A05B35B242F733A0096DBCD /* Frameworks */,
 				6A05B35C242F733A0096DBCD /* Resources */,
@@ -460,6 +551,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B376242F733A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.TVUITests" */;
 			buildPhases = (
+				365AE648500BB7F74B8C4645 /* [CP] Check Pods Manifest.lock */,
 				6A05B365242F733A0096DBCD /* Sources */,
 				6A05B366242F733A0096DBCD /* Frameworks */,
 				6A05B367242F733A0096DBCD /* Resources */,
@@ -478,6 +570,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3A0242F73E10096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.OSX" */;
 			buildPhases = (
+				7137DB4AE6907D4A7C869510 /* [CP] Check Pods Manifest.lock */,
 				6A05B379242F73DF0096DBCD /* Sources */,
 				6A05B37A242F73DF0096DBCD /* Frameworks */,
 				6A05B37B242F73DF0096DBCD /* Resources */,
@@ -495,6 +588,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3A3242F73E10096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.OSXTests" */;
 			buildPhases = (
+				F5A3BC1780E69FB533521ECC /* [CP] Check Pods Manifest.lock */,
 				6A05B38A242F73E10096DBCD /* Sources */,
 				6A05B38B242F73E10096DBCD /* Frameworks */,
 				6A05B38C242F73E10096DBCD /* Resources */,
@@ -513,6 +607,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3A6242F73E10096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.OSXUITests" */;
 			buildPhases = (
+				383A780B3AE1EE84FD8AF402 /* [CP] Check Pods Manifest.lock */,
 				6A05B395242F73E10096DBCD /* Sources */,
 				6A05B396242F73E10096DBCD /* Frameworks */,
 				6A05B397242F73E10096DBCD /* Resources */,
@@ -531,9 +626,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3D6242F744A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.iOS" */;
 			buildPhases = (
+				D7DDBDC241DEAC6BAAA5AF84 /* [CP] Check Pods Manifest.lock */,
 				6A05B3A9242F74490096DBCD /* Sources */,
 				6A05B3AA242F74490096DBCD /* Frameworks */,
 				6A05B3AB242F74490096DBCD /* Resources */,
+				6EA8A1E138E26BAB97AF2272 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,6 +645,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3D9242F744A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.iOSTests" */;
 			buildPhases = (
+				9E376CCF3EA03533C5BBE1AF /* [CP] Check Pods Manifest.lock */,
 				6A05B3C0242F744A0096DBCD /* Sources */,
 				6A05B3C1242F744A0096DBCD /* Frameworks */,
 				6A05B3C2242F744A0096DBCD /* Resources */,
@@ -566,9 +664,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A05B3DC242F744A0096DBCD /* Build configuration list for PBXNativeTarget "Hymnal.iOSUITests" */;
 			buildPhases = (
+				C27BF1A4194E7A0BC6CC1C4E /* [CP] Check Pods Manifest.lock */,
 				6A05B3CB242F744A0096DBCD /* Sources */,
 				6A05B3CC242F744A0096DBCD /* Frameworks */,
 				6A05B3CD242F744A0096DBCD /* Resources */,
+				EC13BC19D2F14BBF9D9E483B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -726,6 +826,241 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305192A1B9705D6FE8433C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.TV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		365AE648500BB7F74B8C4645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.TV-Hymnal.TVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		383A780B3AE1EE84FD8AF402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.OSX-Hymnal.OSXUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EA8A1E138E26BAB97AF2272 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7137DB4AE6907D4A7C869510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.OSX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E376CCF3EA03533C5BBE1AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD697E579399A91EC174DCF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.TVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27BF1A4194E7A0BC6CC1C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.iOS-Hymnal.iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7DDBDC241DEAC6BAAA5AF84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC13BC19D2F14BBF9D9E483B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A3BC1780E69FB533521ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hymnal.OSXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A05B345242F73370096DBCD /* Sources */ = {
@@ -909,6 +1244,7 @@
 		};
 		6A05B371242F733A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9278191F15A558A73B44078 /* Pods-Hymnal.TV.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -981,6 +1317,7 @@
 		};
 		6A05B372242F733A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E5942F103326DBEE676F64 /* Pods-Hymnal.TV.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1047,6 +1384,7 @@
 		};
 		6A05B374242F733A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1ECF21D16C929E56BA54D4 /* Pods-Hymnal.TVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1122,6 +1460,7 @@
 		};
 		6A05B375242F733A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E298F115504A20C6745189 /* Pods-Hymnal.TVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1191,6 +1530,7 @@
 		};
 		6A05B377242F733A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708DC44F6B4A92E04C09F6A5 /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1265,6 +1605,7 @@
 		};
 		6A05B378242F733A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846C6D71102DF6D74E748EF2 /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1333,6 +1674,7 @@
 		};
 		6A05B3A1242F73E10096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C796767DC5A4B921A35F40 /* Pods-Hymnal.OSX.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1407,6 +1749,7 @@
 		};
 		6A05B3A2242F73E10096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A15BA3DB3A73E53AF2EBB35 /* Pods-Hymnal.OSX.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1474,6 +1817,7 @@
 		};
 		6A05B3A4242F73E10096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C59A5DDBEFC7846AE0FDEB /* Pods-Hymnal.OSXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1549,6 +1893,7 @@
 		};
 		6A05B3A5242F73E10096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708500BC97587C296E22E2E5 /* Pods-Hymnal.OSXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1617,6 +1962,7 @@
 		};
 		6A05B3A7242F73E10096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DA19CD328F9D157562FC26 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1691,6 +2037,7 @@
 		};
 		6A05B3A8242F73E10096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9C7199F6E813B1AFC090A3 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1758,6 +2105,7 @@
 		};
 		6A05B3D7242F744A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E0B6EBC89904804F2C36B4 /* Pods-Hymnal.iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1832,6 +2180,7 @@
 		};
 		6A05B3D8242F744A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA30A676620D30539F6D712 /* Pods-Hymnal.iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1900,6 +2249,7 @@
 		};
 		6A05B3DA242F744A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB819F0C3EEFF86CFF3088C2 /* Pods-Hymnal.iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1975,6 +2325,7 @@
 		};
 		6A05B3DB242F744A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CC06FEB50B68F8B652C4F8 /* Pods-Hymnal.iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2044,6 +2395,7 @@
 		};
 		6A05B3DD242F744A0096DBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B939305FB9FF76459DFEFF /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2118,6 +2470,7 @@
 		};
 		6A05B3DE242F744A0096DBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83E9CB50C9290D65AF0F5C2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;

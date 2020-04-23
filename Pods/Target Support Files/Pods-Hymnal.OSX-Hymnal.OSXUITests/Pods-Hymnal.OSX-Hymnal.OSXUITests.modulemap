@@ -1,0 +1,6 @@
+framework module Pods_Hymnal_OSX_Hymnal_OSXUITests {
+  umbrella header "Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

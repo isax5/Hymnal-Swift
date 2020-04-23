@@ -1,0 +1,2091 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00003A957C27DCF94760E1B381131000 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADBD36F931B48F3FE5A0EBB5B58568F /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73967545567146751908E684CF47B8F /* CoreGraphics.framework */; };
+		0FA511DE9982BA501F478C1054588941 /* Pods-Hymnal.OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C10BED17A3F30484BF64F0171ADA6DE /* Pods-Hymnal.OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132422F7FD2826D961BDFDAF131EB48 /* IQKeyboardManagerConstantsInternal.swift */; };
+		132EC8117AF434011C15F181414242AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B6CEF62F6EA2A0070EE906FDD0C1F5 /* Cocoa.framework */; };
+		137A157CFA02623B2E41A4C16A4A6458 /* Pods-Hymnal.iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B637BADF25F388D1D36E38EF809F8C5 /* Pods-Hymnal.iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3927D54819D59F8277DF380A2748E1 /* IQNSArray+Sort.swift */; };
+		2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */; };
+		38076333179FE91691A7C368AD63C699 /* Pods-Hymnal.iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ECC01687E7D94180BD3923E05E6DCC /* Pods-Hymnal.iOS-dummy.m */; };
+		398D1F02263311D26168269BB7DF3270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908D385235BE67785563A55A61BB22F8 /* Foundation.framework */; };
+		3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057707BB706AAF034B6D708F9A227AE /* IQKeyboardManager.swift */; };
+		4331CF379EF7301426CE8FA86B1A9113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B6CEF62F6EA2A0070EE906FDD0C1F5 /* Cocoa.framework */; };
+		4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A734DA18EB2A619E5DCD06929D582 /* IQKeyboardReturnKeyHandler.swift */; };
+		4A99CDBD610FB969BB1E9F2D994A30B8 /* Pods-Hymnal.iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 499528D670094E6DD5070879CF1D6F52 /* Pods-Hymnal.iOSTests-dummy.m */; };
+		4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66F54B712994CD5B1D65908F270DF5 /* IQUITextFieldView+Additions.swift */; };
+		4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C69B3B6881C804F89A7040C51130 /* IQInvocation.swift */; };
+		5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15BBB8B74533E3FEC261560B5917F5 /* IQPreviousNextView.swift */; };
+		62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F43534BC1AFDC445DBE922ACC7C646 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D1B8E6D2D990849B3DFAD39A5EEF46 /* Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6335D0DBD1D3C61FA2BE2F70DC1882C0 /* Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m */; };
+		74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB788589E16A50605EEF6AD68F414C /* IQUIViewController+Additions.swift */; };
+		773F9DD8BD399FB2F2CF5563ECD0D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908D385235BE67785563A55A61BB22F8 /* Foundation.framework */; };
+		7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E75145E17AE8E2CB136609D2C00B3 /* IQTextView.swift */; };
+		8022D13595BAF8B789C550FCE9C55D4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B6CEF62F6EA2A0070EE906FDD0C1F5 /* Cocoa.framework */; };
+		89A97698F0124C991F595A205AC6644E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */; };
+		8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A7C3C069EDDB70E8CFE79436229CB /* IQUIView+Hierarchy.swift */; };
+		8EB0A807FA7E4777386D31A47C6406B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */; };
+		8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24333734C85CFE1654CE4191572C2CC9 /* QuartzCore.framework */; };
+		980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C4FBF7859B4844A58F142042039CA /* IQToolbar.swift */; };
+		9E161A3F3F2B1B6BAD421C39610B65FF /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6E169C7F07F18E583EAD2D81B83E9E /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6D4A39E2B08F3B2686AE78D570673A /* Pods-Hymnal.OSXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A873E0AC12D7F1EE6F8EB8D0947132 /* Pods-Hymnal.OSXTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BD7F7755E1A630C3813F4293009939 /* IQUIView+IQKeyboardToolbar.swift */; };
+		B0318283D84BD1009FEAB7836F97E421 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F44F8AFB0D4AF3A406724CAB391B2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m */; };
+		B5F576B153D35450B29ADD574DE7B798 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE398DE31068E6980C5F707C3AF98E7 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m */; };
+		B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB1743BE20E6A096D1EBC53D4AEF9B /* IQKeyboardManagerSwift-dummy.m */; };
+		C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EEF12552957AFDF4773E875708D57 /* IQKeyboardManagerConstants.swift */; };
+		C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC285A9684B8F153E7D7ECDD69652ED /* IQUIScrollView+Additions.swift */; };
+		C2E8FC737ECA28B730D38EA2F40A1196 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */; };
+		C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88FF0C12CB768F1D409CD9EB4DC3B3F /* IQTitleBarButtonItem.swift */; };
+		CE58F87D4FD866F913DFBFD00A7D635B /* Pods-Hymnal.OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42021AB0A7B000F64F66C7A20A0F71D9 /* Pods-Hymnal.OSX-dummy.m */; };
+		D1F6D59D7313FB17B967666DB49B723F /* Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09EA95E78B0E7DAE7ABEC252C4129958 /* Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D2E68A56C0C5A81047A3A1EE8F481 /* IQBarButtonItem.swift */; };
+		DF27E41E41DEEC997FCEC137BBECBCD0 /* Pods-Hymnal.OSXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE53CBC568974DF4FEE6D12D27FAA02 /* Pods-Hymnal.OSXTests-dummy.m */; };
+		E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3438D97AB43163E96A2917E8A505E8 /* UIKit.framework */; };
+		E32B4F5E939984F18856835AFE01C0A9 /* Pods-Hymnal.TVTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3860673C928DD072E1B99214F673431 /* Pods-Hymnal.TVTests-dummy.m */; };
+		F2EFA39AA4320CD3259BD4138D6F6B63 /* Pods-Hymnal.TVTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0770CD6E61A10B9B19622785A17DAE /* Pods-Hymnal.TVTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36C87C92C70E7937FA2C590A1324D39 /* Pods-Hymnal.TV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6E6454CE3A244F6328C591D525BF6E /* Pods-Hymnal.TV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F376512CE74BDACBEA25AD6B942702BE /* Pods-Hymnal.TV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D2D4F428FC41267177F3F3BC7ABF2 /* Pods-Hymnal.TV-dummy.m */; };
+		FAB91F38D652A51012C36C6012373D74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908D385235BE67785563A55A61BB22F8 /* Foundation.framework */; };
+		FF35A96B59BF50EA767BA194DF29CC07 /* Pods-Hymnal.iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F44F65A346A1B31F911A4F6916A2565 /* Pods-Hymnal.iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C81A8B9D3BD6494FE7DCDBB33B859A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00130553934CD7F0AA50BA63A24B672B;
+			remoteInfo = "Pods-Hymnal.TV";
+		};
+		75236D11549C4AB6B540B54ECBD5234D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81832E8B2C21642F65271E373696C6D2;
+			remoteInfo = "Pods-Hymnal.OSX";
+		};
+		86E25E9676125441585EB3B59927122B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		CC4BFB77342529072051F2A5F545225B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B243AD3B06A1C7A00124F11A254427;
+			remoteInfo = "Pods-Hymnal.iOS";
+		};
+		D503254FA5FDF4FCBB11BE01E85448C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039DF1EB92B17DAE222DDEA1928E09AF /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		040610BAA8C4104170163E04B17F2215 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		09EA95E78B0E7DAE7ABEC252C4129958 /* Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h"; sourceTree = "<group>"; };
+		0B637BADF25F388D1D36E38EF809F8C5 /* Pods-Hymnal.iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		0CD41D8EFD00E55FE8E01C2F1E738F63 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DD1CDD3A3C5B2AB6422274ABCE59741 /* Pods-Hymnal.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0F18E80D89C98E6DC7C9D9FE202E45CB /* Pods-Hymnal.iOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOSTests-Info.plist"; sourceTree = "<group>"; };
+		0F44F65A346A1B31F911A4F6916A2565 /* Pods-Hymnal.iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.iOS-umbrella.h"; sourceTree = "<group>"; };
+		0F5F44F8AFB0D4AF3A406724CAB391B2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m"; sourceTree = "<group>"; };
+		104FD4AFDE8A9F7FD6EBCF0C98C329BA /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		1296D46276D6C5418E0F8F8F9D60DD9D /* Pods-Hymnal.OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1644F5D059AEA42457CC43CE84749B75 /* Pods-Hymnal.iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		196AB590E97AF11C90A4D3D3EACEC540 /* Pods-Hymnal.OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.OSX.modulemap"; sourceTree = "<group>"; };
+		1C346A76C272C6AD34F973CA427C4065 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DDE39E6EDBD9A42415990669C7B934E /* Pods-Hymnal.TV-Hymnal.TVUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-Hymnal.TVUITests-Info.plist"; sourceTree = "<group>"; };
+		21F5567D495073210FD9366A8305D6E9 /* Pods-Hymnal.TV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.TV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24333734C85CFE1654CE4191572C2CC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2664C92EBF6CD649555FFF17915B7E00 /* Pods-Hymnal.TV-Hymnal.TVUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TV-Hymnal.TVUITests.modulemap"; sourceTree = "<group>"; };
+		27A457E68DC8992D738DE3883DF01AFA /* Pods_Hymnal_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOSTests.framework; path = "Pods-Hymnal.iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		289E75145E17AE8E2CB136609D2C00B3 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		2B0BCEB9F066AC79609D6853AEA2A64B /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		2BB0ECB8B82A4BC6DCB06C29B3BB8119 /* Pods-Hymnal.OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSX.release.xcconfig"; sourceTree = "<group>"; };
+		2CE53CBC568974DF4FEE6D12D27FAA02 /* Pods-Hymnal.OSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSXTests-dummy.m"; sourceTree = "<group>"; };
+		2CEB1743BE20E6A096D1EBC53D4AEF9B /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		3057707BB706AAF034B6D708F9A227AE /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		3557C276A63F5E3981C3C780F8CD5970 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOS_Hymnal_iOSUITests.framework; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DC40C1EF7D0105E94C5626CB0919DC /* Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist"; sourceTree = "<group>"; };
+		37215DD7BC37250CEA686C278C9A1919 /* Pods-Hymnal.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS.release.xcconfig"; sourceTree = "<group>"; };
+		37D59AB9CAA633D499FB6091E2B6CCCC /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TV_Hymnal_TVUITests.framework; path = "Pods-Hymnal.TV-Hymnal.TVUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B42027A0B4CE9AC5CA8C5249BA1DF87 /* Pods-Hymnal.OSXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.OSXTests.modulemap"; sourceTree = "<group>"; };
+		3BF0C69B3B6881C804F89A7040C51130 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		3C10BED17A3F30484BF64F0171ADA6DE /* Pods-Hymnal.OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSX-umbrella.h"; sourceTree = "<group>"; };
+		42021AB0A7B000F64F66C7A20A0F71D9 /* Pods-Hymnal.OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSX-dummy.m"; sourceTree = "<group>"; };
+		420C45124D072FC9121E1F6A02D3B096 /* Pods_Hymnal_TVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TVTests.framework; path = "Pods-Hymnal.TVTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D500A10B97B59BC2F37AD4756EE868 /* Pods_Hymnal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOS.framework; path = "Pods-Hymnal.iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DF660446BC8D98DA1F6FB6725440E3 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
+		499528D670094E6DD5070879CF1D6F52 /* Pods-Hymnal.iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.iOSTests-dummy.m"; sourceTree = "<group>"; };
+		49E896675FFBFC416F684B2140623B8D /* Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4C3927D54819D59F8277DF380A2748E1 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		4DA61C27004A8B585EEF803204F549E5 /* Pods-Hymnal.TVTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TVTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E1CC3A3206D1F6154036CACB273DB06 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FE398DE31068E6980C5F707C3AF98E7 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m"; sourceTree = "<group>"; };
+		52F781906C447D33341B502ED46D2EC2 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		5A6BFC5739B6E1BB098CDB3567C65EDF /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSX_Hymnal_OSXUITests.framework; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADBD36F931B48F3FE5A0EBB5B58568F /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h"; sourceTree = "<group>"; };
+		5E337F65272EF5661311A364F87BD557 /* Pods-Hymnal.OSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-acknowledgements.plist"; sourceTree = "<group>"; };
+		62F48AECC1D920FE451D469C408170A1 /* Pods-Hymnal.OSX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.OSX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6335D0DBD1D3C61FA2BE2F70DC1882C0 /* Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m"; sourceTree = "<group>"; };
+		667FC8CD3F482576FAEAD0BB0AC9E0B0 /* Pods-Hymnal.TVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TVTests.release.xcconfig"; sourceTree = "<group>"; };
+		6747BF8B4049C1513850A8BC9BBF2A72 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C3438D97AB43163E96A2917E8A505E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		72BD7F7755E1A630C3813F4293009939 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		74A873E0AC12D7F1EE6F8EB8D0947132 /* Pods-Hymnal.OSXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSXTests-umbrella.h"; sourceTree = "<group>"; };
+		797849F0C91249B4B7AD5A791CFF4B30 /* Pods_Hymnal_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSX.framework; path = "Pods-Hymnal.OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B65C5F55D2A2359AADCC3F0D2E7AEA9 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist"; sourceTree = "<group>"; };
+		7DEF59CDB0142C5276B007754DA5703C /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6E6454CE3A244F6328C591D525BF6E /* Pods-Hymnal.TV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.TV-umbrella.h"; sourceTree = "<group>"; };
+		85ADBD0A38D8B8D6EDDF02DB29CC73D5 /* Pods-Hymnal.iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.iOS.modulemap"; sourceTree = "<group>"; };
+		879AF5A8636A7232972C6D598FCAB9F4 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests.modulemap"; sourceTree = "<group>"; };
+		8A6EEF12552957AFDF4773E875708D57 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		8C3F1AF0B7574FD7F5985329FAB74AD3 /* Pods-Hymnal.OSX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-Info.plist"; sourceTree = "<group>"; };
+		908D385235BE67785563A55A61BB22F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		97D92F30DA1535214AC9399823E20AC3 /* Pods-Hymnal.TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TV.release.xcconfig"; sourceTree = "<group>"; };
+		9B9D2D4F428FC41267177F3F3BC7ABF2 /* Pods-Hymnal.TV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.TV-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A132422F7FD2826D961BDFDAF131EB48 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		A50AA953D3F3EAA3F8912DC0AEAC0FF5 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A73967545567146751908E684CF47B8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B34A71063A44B3697C4C235DE3E106 /* Pods-Hymnal.TV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TV.modulemap"; sourceTree = "<group>"; };
+		AB84AB5FA1E9CCF59BD38BE80CF67F92 /* Pods-Hymnal.OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB996A2B61920EDDBE009EE15765244D /* Pods-Hymnal.TVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADD7E7C0111655265FF95CCF2B5465B2 /* Pods-Hymnal.TV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-Info.plist"; sourceTree = "<group>"; };
+		B1B6CEF62F6EA2A0070EE906FDD0C1F5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B34D3BD35EA113EBFACF1E0E050CF373 /* Pods-Hymnal.TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TV.debug.xcconfig"; sourceTree = "<group>"; };
+		BD118EBFC2EC7766B37CAE7D1B9DE3BE /* Pods-Hymnal.OSXTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSXTests-Info.plist"; sourceTree = "<group>"; };
+		BE6A7C3C069EDDB70E8CFE79436229CB /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		C0F5BD0E4EB6E8DA6C93F3C239A99885 /* Pods-Hymnal.iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C12D2E68A56C0C5A81047A3A1EE8F481 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		C24373BC1AB3DB9924872B27C1101BBB /* Pods-Hymnal.iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-Info.plist"; sourceTree = "<group>"; };
+		C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C52C2D86F2D6B2CB78890170EC5BCDCA /* Pods-Hymnal.iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C5510217A570F50FAA3F5E1094A0F0E0 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		C5DB788589E16A50605EEF6AD68F414C /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		C5E5B8F572434F8CA8DFF6C6A2884363 /* Pods-Hymnal.TVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.TVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C973EC5C2BC30D3E4924DE9DFE87F826 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB9757CB27A49DA382AD15FC0BCF9E12 /* Pods-Hymnal.OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6E169C7F07F18E583EAD2D81B83E9E /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		CF6DD378F116DBCCF63128E947537938 /* Pods-Hymnal.iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF70FA1F8F83B1B931252AB208DD8CCD /* Pods-Hymnal.iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hymnal.iOS-frameworks.sh"; sourceTree = "<group>"; };
+		D162827B98018736A09FFD2B2ED7F9A5 /* Pods_Hymnal_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TV.framework; path = "Pods-Hymnal.TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E135023F07765F760863015A0D7C08 /* Pods-Hymnal.TVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TVTests.modulemap"; sourceTree = "<group>"; };
+		D40F2ED5D6235545F011FE15CE6D45D0 /* Pods-Hymnal.TVTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TVTests-Info.plist"; sourceTree = "<group>"; };
+		D8ECC01687E7D94180BD3923E05E6DCC /* Pods-Hymnal.iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.iOS-dummy.m"; sourceTree = "<group>"; };
+		DA15BBB8B74533E3FEC261560B5917F5 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		DB0770CD6E61A10B9B19622785A17DAE /* Pods-Hymnal.TVTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.TVTests-umbrella.h"; sourceTree = "<group>"; };
+		DE7C4FBF7859B4844A58F142042039CA /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		DEC19A3C277E1D18C0211953B8B0C61B /* Pods-Hymnal.iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC285A9684B8F153E7D7ECDD69652ED /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		DFDD743A2A5B3137106607EA035B691C /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E06B7E4D98910A8DD4B13B30D789CA49 /* Pods-Hymnal.iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0F43534BC1AFDC445DBE922ACC7C646 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		E3860673C928DD072E1B99214F673431 /* Pods-Hymnal.TVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.TVTests-dummy.m"; sourceTree = "<group>"; };
+		E39D5918B254D6EDE0839F6480D09FDA /* Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap"; sourceTree = "<group>"; };
+		E3AB10B823B585CC600AADDE595384E6 /* Pods_Hymnal_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSXTests.framework; path = "Pods-Hymnal.OSXTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88FF0C12CB768F1D409CD9EB4DC3B3F /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		EBC47416100755F0F07F997475829213 /* Pods-Hymnal.OSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC0B6E95E628F264B1679F8E0A11FFF1 /* Pods-Hymnal.TV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-acknowledgements.plist"; sourceTree = "<group>"; };
+		F14126ED663C36804D36FB79266A21E0 /* Pods-Hymnal.iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.iOSTests.modulemap"; sourceTree = "<group>"; };
+		F55799445A116FD7B70F542C0406DB6C /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F82A734DA18EB2A619E5DCD06929D582 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		FA66F54B712994CD5B1D65908F270DF5 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		FD77C6E63B762E9D4F3840C67038EB10 /* Pods-Hymnal.OSXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.OSXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD7AB5656FF200CE032F0A8979E35313 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25A81C43B46AC997B32306C36B7BFFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132EC8117AF434011C15F181414242AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F0E8499CA24D38BBFE8A2D63A88FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A97698F0124C991F595A205AC6644E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273849326AE8C18BE33AEFC7675609DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB91F38D652A51012C36C6012373D74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2292E431F316076553538B7FBB63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */,
+				2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */,
+				8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */,
+				E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D1C2F051E139692D658F928B7004D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB0A807FA7E4777386D31A47C6406B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591651E901B3D61D24E326B8074FAAB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E8FC737ECA28B730D38EA2F40A1196 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646FD76FA8E1F0151ABF22771FCB40D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8022D13595BAF8B789C550FCE9C55D4E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659D69CB6EFD53BCB5C8684F6F9E5140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398D1F02263311D26168269BB7DF3270 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBDDF0E4DEC1D142224E74FEDC69329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4331CF379EF7301426CE8FA86B1A9113 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D5A4687CFFC899CE8D5FEAAA927741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773F9DD8BD399FB2F2CF5563ECD0D554 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006FA2ACD63A596848E2806D30758F4E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				B1B6CEF62F6EA2A0070EE906FDD0C1F5 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		186C0971719B82E12F98A9767C4795CE /* Pods-Hymnal.OSX */ = {
+			isa = PBXGroup;
+			children = (
+				196AB590E97AF11C90A4D3D3EACEC540 /* Pods-Hymnal.OSX.modulemap */,
+				62F48AECC1D920FE451D469C408170A1 /* Pods-Hymnal.OSX-acknowledgements.markdown */,
+				5E337F65272EF5661311A364F87BD557 /* Pods-Hymnal.OSX-acknowledgements.plist */,
+				42021AB0A7B000F64F66C7A20A0F71D9 /* Pods-Hymnal.OSX-dummy.m */,
+				8C3F1AF0B7574FD7F5985329FAB74AD3 /* Pods-Hymnal.OSX-Info.plist */,
+				3C10BED17A3F30484BF64F0171ADA6DE /* Pods-Hymnal.OSX-umbrella.h */,
+				CB9757CB27A49DA382AD15FC0BCF9E12 /* Pods-Hymnal.OSX.debug.xcconfig */,
+				2BB0ECB8B82A4BC6DCB06C29B3BB8119 /* Pods-Hymnal.OSX.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.OSX";
+			path = "Target Support Files/Pods-Hymnal.OSX";
+			sourceTree = "<group>";
+		};
+		19773052FB51D3406FF99FD8DDD5AF0B /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C12D2E68A56C0C5A81047A3A1EE8F481 /* IQBarButtonItem.swift */,
+				3BF0C69B3B6881C804F89A7040C51130 /* IQInvocation.swift */,
+				3057707BB706AAF034B6D708F9A227AE /* IQKeyboardManager.swift */,
+				8A6EEF12552957AFDF4773E875708D57 /* IQKeyboardManagerConstants.swift */,
+				A132422F7FD2826D961BDFDAF131EB48 /* IQKeyboardManagerConstantsInternal.swift */,
+				F82A734DA18EB2A619E5DCD06929D582 /* IQKeyboardReturnKeyHandler.swift */,
+				4C3927D54819D59F8277DF380A2748E1 /* IQNSArray+Sort.swift */,
+				DA15BBB8B74533E3FEC261560B5917F5 /* IQPreviousNextView.swift */,
+				289E75145E17AE8E2CB136609D2C00B3 /* IQTextView.swift */,
+				E88FF0C12CB768F1D409CD9EB4DC3B3F /* IQTitleBarButtonItem.swift */,
+				DE7C4FBF7859B4844A58F142042039CA /* IQToolbar.swift */,
+				DFC285A9684B8F153E7D7ECDD69652ED /* IQUIScrollView+Additions.swift */,
+				FA66F54B712994CD5B1D65908F270DF5 /* IQUITextFieldView+Additions.swift */,
+				BE6A7C3C069EDDB70E8CFE79436229CB /* IQUIView+Hierarchy.swift */,
+				72BD7F7755E1A630C3813F4293009939 /* IQUIView+IQKeyboardToolbar.swift */,
+				C5DB788589E16A50605EEF6AD68F414C /* IQUIViewController+Additions.swift */,
+				1B4455A90DD87B30FEF59D39B8E6A752 /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		1B4455A90DD87B30FEF59D39B8E6A752 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52F781906C447D33341B502ED46D2EC2 /* IQKeyboardManagerSwift.modulemap */,
+				2CEB1743BE20E6A096D1EBC53D4AEF9B /* IQKeyboardManagerSwift-dummy.m */,
+				104FD4AFDE8A9F7FD6EBCF0C98C329BA /* IQKeyboardManagerSwift-Info.plist */,
+				2B0BCEB9F066AC79609D6853AEA2A64B /* IQKeyboardManagerSwift-prefix.pch */,
+				E0F43534BC1AFDC445DBE922ACC7C646 /* IQKeyboardManagerSwift-umbrella.h */,
+				C5510217A570F50FAA3F5E1094A0F0E0 /* IQKeyboardManagerSwift.debug.xcconfig */,
+				46DF660446BC8D98DA1F6FB6725440E3 /* IQKeyboardManagerSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		1BC626BD79A4197CD66A4BEDA6144DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B357BF905279D89D3A45CFF4D1745D62 /* iOS */,
+				006FA2ACD63A596848E2806D30758F4E /* OS X */,
+				3B6D9EE67A12E7D6145A8F3F333F7B58 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3864EDAFB060D10F75B7183AC7B1B79E /* Pods-Hymnal.TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E135023F07765F760863015A0D7C08 /* Pods-Hymnal.TVTests.modulemap */,
+				C5E5B8F572434F8CA8DFF6C6A2884363 /* Pods-Hymnal.TVTests-acknowledgements.markdown */,
+				4DA61C27004A8B585EEF803204F549E5 /* Pods-Hymnal.TVTests-acknowledgements.plist */,
+				E3860673C928DD072E1B99214F673431 /* Pods-Hymnal.TVTests-dummy.m */,
+				D40F2ED5D6235545F011FE15CE6D45D0 /* Pods-Hymnal.TVTests-Info.plist */,
+				DB0770CD6E61A10B9B19622785A17DAE /* Pods-Hymnal.TVTests-umbrella.h */,
+				AB996A2B61920EDDBE009EE15765244D /* Pods-Hymnal.TVTests.debug.xcconfig */,
+				667FC8CD3F482576FAEAD0BB0AC9E0B0 /* Pods-Hymnal.TVTests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.TVTests";
+			path = "Target Support Files/Pods-Hymnal.TVTests";
+			sourceTree = "<group>";
+		};
+		3B6D9EE67A12E7D6145A8F3F333F7B58 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				908D385235BE67785563A55A61BB22F8 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		3CF8EA1AB8B031DD2782B3A76A98B6EE /* Pods-Hymnal.iOS-Hymnal.iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E39D5918B254D6EDE0839F6480D09FDA /* Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap */,
+				C973EC5C2BC30D3E4924DE9DFE87F826 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.markdown */,
+				040610BAA8C4104170163E04B17F2215 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-acknowledgements.plist */,
+				0F5F44F8AFB0D4AF3A406724CAB391B2 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m */,
+				49E896675FFBFC416F684B2140623B8D /* Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh */,
+				36DC40C1EF7D0105E94C5626CB0919DC /* Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist */,
+				CC6E169C7F07F18E583EAD2D81B83E9E /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h */,
+				7DEF59CDB0142C5276B007754DA5703C /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */,
+				6747BF8B4049C1513850A8BC9BBF2A72 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.iOS-Hymnal.iOSUITests";
+			path = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests";
+			sourceTree = "<group>";
+		};
+		60B00EC5DD8E9FC6716D114C7EB4AB6B /* Pods-Hymnal.TV */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34A71063A44B3697C4C235DE3E106 /* Pods-Hymnal.TV.modulemap */,
+				21F5567D495073210FD9366A8305D6E9 /* Pods-Hymnal.TV-acknowledgements.markdown */,
+				EC0B6E95E628F264B1679F8E0A11FFF1 /* Pods-Hymnal.TV-acknowledgements.plist */,
+				9B9D2D4F428FC41267177F3F3BC7ABF2 /* Pods-Hymnal.TV-dummy.m */,
+				ADD7E7C0111655265FF95CCF2B5465B2 /* Pods-Hymnal.TV-Info.plist */,
+				7F6E6454CE3A244F6328C591D525BF6E /* Pods-Hymnal.TV-umbrella.h */,
+				B34D3BD35EA113EBFACF1E0E050CF373 /* Pods-Hymnal.TV.debug.xcconfig */,
+				97D92F30DA1535214AC9399823E20AC3 /* Pods-Hymnal.TV.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.TV";
+			path = "Target Support Files/Pods-Hymnal.TV";
+			sourceTree = "<group>";
+		};
+		70850DF77CD097CE669438EDE2D79779 /* Pods-Hymnal.iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F14126ED663C36804D36FB79266A21E0 /* Pods-Hymnal.iOSTests.modulemap */,
+				C0F5BD0E4EB6E8DA6C93F3C239A99885 /* Pods-Hymnal.iOSTests-acknowledgements.markdown */,
+				C52C2D86F2D6B2CB78890170EC5BCDCA /* Pods-Hymnal.iOSTests-acknowledgements.plist */,
+				499528D670094E6DD5070879CF1D6F52 /* Pods-Hymnal.iOSTests-dummy.m */,
+				0F18E80D89C98E6DC7C9D9FE202E45CB /* Pods-Hymnal.iOSTests-Info.plist */,
+				0B637BADF25F388D1D36E38EF809F8C5 /* Pods-Hymnal.iOSTests-umbrella.h */,
+				DEC19A3C277E1D18C0211953B8B0C61B /* Pods-Hymnal.iOSTests.debug.xcconfig */,
+				1644F5D059AEA42457CC43CE84749B75 /* Pods-Hymnal.iOSTests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.iOSTests";
+			path = "Target Support Files/Pods-Hymnal.iOSTests";
+			sourceTree = "<group>";
+		};
+		7B92305C542BC10C0A975024BECB131A /* Pods-Hymnal.TV-Hymnal.TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2664C92EBF6CD649555FFF17915B7E00 /* Pods-Hymnal.TV-Hymnal.TVUITests.modulemap */,
+				4E1CC3A3206D1F6154036CACB273DB06 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.markdown */,
+				A50AA953D3F3EAA3F8912DC0AEAC0FF5 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.plist */,
+				6335D0DBD1D3C61FA2BE2F70DC1882C0 /* Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m */,
+				1DDE39E6EDBD9A42415990669C7B934E /* Pods-Hymnal.TV-Hymnal.TVUITests-Info.plist */,
+				09EA95E78B0E7DAE7ABEC252C4129958 /* Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h */,
+				F55799445A116FD7B70F542C0406DB6C /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */,
+				DFDD743A2A5B3137106607EA035B691C /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.TV-Hymnal.TVUITests";
+			path = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests";
+			sourceTree = "<group>";
+		};
+		9FB52DFA8316ED1D1266992E362EE8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				43D500A10B97B59BC2F37AD4756EE868 /* Pods_Hymnal_iOS.framework */,
+				3557C276A63F5E3981C3C780F8CD5970 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */,
+				27A457E68DC8992D738DE3883DF01AFA /* Pods_Hymnal_iOSTests.framework */,
+				797849F0C91249B4B7AD5A791CFF4B30 /* Pods_Hymnal_OSX.framework */,
+				5A6BFC5739B6E1BB098CDB3567C65EDF /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */,
+				E3AB10B823B585CC600AADDE595384E6 /* Pods_Hymnal_OSXTests.framework */,
+				D162827B98018736A09FFD2B2ED7F9A5 /* Pods_Hymnal_TV.framework */,
+				37D59AB9CAA633D499FB6091E2B6CCCC /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */,
+				420C45124D072FC9121E1F6A02D3B096 /* Pods_Hymnal_TVTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB4C372FC217F67471CE27B27266AC39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D126F808323F3084E934E4C5EBDBF408 /* Pods-Hymnal.iOS */,
+				70850DF77CD097CE669438EDE2D79779 /* Pods-Hymnal.iOSTests */,
+				186C0971719B82E12F98A9767C4795CE /* Pods-Hymnal.OSX */,
+				F54A87AFBCA7C0678737B0D57BE9CF80 /* Pods-Hymnal.OSXTests */,
+				60B00EC5DD8E9FC6716D114C7EB4AB6B /* Pods-Hymnal.TV */,
+				3864EDAFB060D10F75B7183AC7B1B79E /* Pods-Hymnal.TVTests */,
+				3CF8EA1AB8B031DD2782B3A76A98B6EE /* Pods-Hymnal.iOS-Hymnal.iOSUITests */,
+				BEBA5AECD81FF09AAC2D61112EFFE7AC /* Pods-Hymnal.OSX-Hymnal.OSXUITests */,
+				7B92305C542BC10C0A975024BECB131A /* Pods-Hymnal.TV-Hymnal.TVUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B357BF905279D89D3A45CFF4D1745D62 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A73967545567146751908E684CF47B8F /* CoreGraphics.framework */,
+				C4906105CC8524BF5D49ACA4B0EBEEB9 /* Foundation.framework */,
+				24333734C85CFE1654CE4191572C2CC9 /* QuartzCore.framework */,
+				6C3438D97AB43163E96A2917E8A505E8 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B76BA78A99D5BD517391A6B9597BCBC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19773052FB51D3406FF99FD8DDD5AF0B /* IQKeyboardManagerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEBA5AECD81FF09AAC2D61112EFFE7AC /* Pods-Hymnal.OSX-Hymnal.OSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				879AF5A8636A7232972C6D598FCAB9F4 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.modulemap */,
+				FD7AB5656FF200CE032F0A8979E35313 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.markdown */,
+				1C346A76C272C6AD34F973CA427C4065 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-acknowledgements.plist */,
+				4FE398DE31068E6980C5F707C3AF98E7 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m */,
+				7B65C5F55D2A2359AADCC3F0D2E7AEA9 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist */,
+				5ADBD36F931B48F3FE5A0EBB5B58568F /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h */,
+				0CD41D8EFD00E55FE8E01C2F1E738F63 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */,
+				039DF1EB92B17DAE222DDEA1928E09AF /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.OSX-Hymnal.OSXUITests";
+			path = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1BC626BD79A4197CD66A4BEDA6144DBF /* Frameworks */,
+				B76BA78A99D5BD517391A6B9597BCBC5 /* Pods */,
+				9FB52DFA8316ED1D1266992E362EE8E7 /* Products */,
+				AB4C372FC217F67471CE27B27266AC39 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D126F808323F3084E934E4C5EBDBF408 /* Pods-Hymnal.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				85ADBD0A38D8B8D6EDDF02DB29CC73D5 /* Pods-Hymnal.iOS.modulemap */,
+				E06B7E4D98910A8DD4B13B30D789CA49 /* Pods-Hymnal.iOS-acknowledgements.markdown */,
+				CF6DD378F116DBCCF63128E947537938 /* Pods-Hymnal.iOS-acknowledgements.plist */,
+				D8ECC01687E7D94180BD3923E05E6DCC /* Pods-Hymnal.iOS-dummy.m */,
+				CF70FA1F8F83B1B931252AB208DD8CCD /* Pods-Hymnal.iOS-frameworks.sh */,
+				C24373BC1AB3DB9924872B27C1101BBB /* Pods-Hymnal.iOS-Info.plist */,
+				0F44F65A346A1B31F911A4F6916A2565 /* Pods-Hymnal.iOS-umbrella.h */,
+				0DD1CDD3A3C5B2AB6422274ABCE59741 /* Pods-Hymnal.iOS.debug.xcconfig */,
+				37215DD7BC37250CEA686C278C9A1919 /* Pods-Hymnal.iOS.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.iOS";
+			path = "Target Support Files/Pods-Hymnal.iOS";
+			sourceTree = "<group>";
+		};
+		F54A87AFBCA7C0678737B0D57BE9CF80 /* Pods-Hymnal.OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B42027A0B4CE9AC5CA8C5249BA1DF87 /* Pods-Hymnal.OSXTests.modulemap */,
+				FD77C6E63B762E9D4F3840C67038EB10 /* Pods-Hymnal.OSXTests-acknowledgements.markdown */,
+				EBC47416100755F0F07F997475829213 /* Pods-Hymnal.OSXTests-acknowledgements.plist */,
+				2CE53CBC568974DF4FEE6D12D27FAA02 /* Pods-Hymnal.OSXTests-dummy.m */,
+				BD118EBFC2EC7766B37CAE7D1B9DE3BE /* Pods-Hymnal.OSXTests-Info.plist */,
+				74A873E0AC12D7F1EE6F8EB8D0947132 /* Pods-Hymnal.OSXTests-umbrella.h */,
+				1296D46276D6C5418E0F8F8F9D60DD9D /* Pods-Hymnal.OSXTests.debug.xcconfig */,
+				AB84AB5FA1E9CCF59BD38BE80CF67F92 /* Pods-Hymnal.OSXTests.release.xcconfig */,
+			);
+			name = "Pods-Hymnal.OSXTests";
+			path = "Target Support Files/Pods-Hymnal.OSXTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09D89AF6E8FC27E6837DB278298B5BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6D4A39E2B08F3B2686AE78D570673A /* Pods-Hymnal.OSXTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4DB255E86ACE4EE969E7C4EA73D238 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00003A957C27DCF94760E1B381131000 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DB8BC166E3EEA2C1F99999D6F97C11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F6D59D7313FB17B967666DB49B723F /* Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFADD989500CAE3298FCBDA915E5E07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36C87C92C70E7937FA2C590A1324D39 /* Pods-Hymnal.TV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A869727909FDDD5BF05B2AAAA5D7FA80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2EFA39AA4320CD3259BD4138D6F6B63 /* Pods-Hymnal.TVTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD49DF1D59C88BD0B21B557F5A1789DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF35A96B59BF50EA767BA194DF29CC07 /* Pods-Hymnal.iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB851AA0A2644062F8EA100A604A322B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E161A3F3F2B1B6BAD421C39610B65FF /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A22A1DAFC15D95B0DC11B6A1407B5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA511DE9982BA501F478C1054588941 /* Pods-Hymnal.OSX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AD6CF11CA019BE74A465E297DF0154 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137A157CFA02623B2E41A4C16A4A6458 /* Pods-Hymnal.iOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A6429FF0F9608A16E4D96813E85F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00130553934CD7F0AA50BA63A24B672B /* Pods-Hymnal.TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E39AE254CEEBF96071815225222EC99 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TV" */;
+			buildPhases = (
+				8BFADD989500CAE3298FCBDA915E5E07 /* Headers */,
+				0D3EDB2A16A244B0611A50DCA4DFDE6C /* Sources */,
+				90D5A4687CFFC899CE8D5FEAAA927741 /* Frameworks */,
+				71FD1215B12809AB6AB547BF1E9C7557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hymnal.TV";
+			productName = "Pods-Hymnal.TV";
+			productReference = D162827B98018736A09FFD2B2ED7F9A5 /* Pods_Hymnal_TV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17150A965DE8BC15A826BF98A58DFAE6 /* Pods-Hymnal.iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C692BD3EC85E7A9AC41DD364C7B1D56 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOSTests" */;
+			buildPhases = (
+				E2AD6CF11CA019BE74A465E297DF0154 /* Headers */,
+				43A13BE6E8A6C8AAE8ED0BA58B011944 /* Sources */,
+				591651E901B3D61D24E326B8074FAAB7 /* Frameworks */,
+				CC52E33691998BEA79338F9B7DAAEF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18DE6A593C029F97BD808E6CFB06A9C /* PBXTargetDependency */,
+			);
+			name = "Pods-Hymnal.iOSTests";
+			productName = "Pods-Hymnal.iOSTests";
+			productReference = 27A457E68DC8992D738DE3883DF01AFA /* Pods_Hymnal_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D212C0EEFA825104E4FBEF275874327 /* Pods-Hymnal.OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D933EB4CF0202714602D7583BD42C419 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSXTests" */;
+			buildPhases = (
+				09D89AF6E8FC27E6837DB278298B5BC2 /* Headers */,
+				591AA55EB87AB6F0C397C9785A888FF5 /* Sources */,
+				25A81C43B46AC997B32306C36B7BFFEB /* Frameworks */,
+				34F84FCCA73B501ECD226748AF47FFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D70ABC6B683ED2105CBB1E2217FE054 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hymnal.OSXTests";
+			productName = "Pods-Hymnal.OSXTests";
+			productReference = E3AB10B823B585CC600AADDE595384E6 /* Pods_Hymnal_OSXTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DE7635B29220D4FF5EEE45F4B52757A /* Pods-Hymnal.TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BED37B51A9B58060B12A8424A24FDA7 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TVTests" */;
+			buildPhases = (
+				A869727909FDDD5BF05B2AAAA5D7FA80 /* Headers */,
+				F7346B24A14C93B925B6B3F7ADC2885B /* Sources */,
+				659D69CB6EFD53BCB5C8684F6F9E5140 /* Frameworks */,
+				42B6D78F6E906CBBF6E746925B324A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3986D1244BF8BAC66B3B7E2B15F8F5F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hymnal.TVTests";
+			productName = "Pods-Hymnal.TVTests";
+			productReference = 420C45124D072FC9121E1F6A02D3B096 /* Pods_Hymnal_TVTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81832E8B2C21642F65271E373696C6D2 /* Pods-Hymnal.OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 452617F2705EFEA5BD01965713864165 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSX" */;
+			buildPhases = (
+				D0A22A1DAFC15D95B0DC11B6A1407B5E /* Headers */,
+				9B6986F9A028CFA49856A2176597C24C /* Sources */,
+				8BBDDF0E4DEC1D142224E74FEDC69329 /* Frameworks */,
+				F3ECB34D176D85F613E8DBD80B22144A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hymnal.OSX";
+			productName = "Pods-Hymnal.OSX";
+			productReference = 797849F0C91249B4B7AD5A791CFF4B30 /* Pods_Hymnal_OSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				F4A6429FF0F9608A16E4D96813E85F23 /* Headers */,
+				6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */,
+				2C2292E431F316076553538B7FBB63C3 /* Frameworks */,
+				FAA5DA81F8292820D65F403E941074FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6B243AD3B06A1C7A00124F11A254427 /* Pods-Hymnal.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BA31B10C052733F3A292524F739FFA /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOS" */;
+			buildPhases = (
+				BD49DF1D59C88BD0B21B557F5A1789DD /* Headers */,
+				E64E76CB5ADDDDCBE7C32F75C7854AA0 /* Sources */,
+				39D1C2F051E139692D658F928B7004D5 /* Frameworks */,
+				1292C957B3E26029B6CDE001284BA23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0BBCCD393DB5E5A2B7B12C37F27C15 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hymnal.iOS";
+			productName = "Pods-Hymnal.iOS";
+			productReference = 43D500A10B97B59BC2F37AD4756EE868 /* Pods_Hymnal_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCC7FAA270B506139E44F90E6EDD009F /* Pods-Hymnal.iOS-Hymnal.iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA57BEA65FDB5E4718A82D4B1B5DCBF4 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOS-Hymnal.iOSUITests" */;
+			buildPhases = (
+				CB851AA0A2644062F8EA100A604A322B /* Headers */,
+				D75A0098DC6939B9A065F576F647604A /* Sources */,
+				26F0E8499CA24D38BBFE8A2D63A88FAA /* Frameworks */,
+				D2EE0B2C864A8F2E4E1B5E3CCBBEB152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA710EFD4ADB9F77313754834ED9FF33 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hymnal.iOS-Hymnal.iOSUITests";
+			productName = "Pods-Hymnal.iOS-Hymnal.iOSUITests";
+			productReference = 3557C276A63F5E3981C3C780F8CD5970 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1A7D8B84BF471A672A22B58F7C8E010 /* Pods-Hymnal.OSX-Hymnal.OSXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DB62B5DBD16CBDF64E365B77FD83DF /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSX-Hymnal.OSXUITests" */;
+			buildPhases = (
+				1A4DB255E86ACE4EE969E7C4EA73D238 /* Headers */,
+				AB2226534CEF8FF796CB72E9AD4F778B /* Sources */,
+				646FD76FA8E1F0151ABF22771FCB40D9 /* Frameworks */,
+				3A538E506E75B892D760369584B568E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hymnal.OSX-Hymnal.OSXUITests";
+			productName = "Pods-Hymnal.OSX-Hymnal.OSXUITests";
+			productReference = 5A6BFC5739B6E1BB098CDB3567C65EDF /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAEAF79403F8263C1DCCB1A51C9B0EE8 /* Pods-Hymnal.TV-Hymnal.TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88553AD3E01CD25933E15E7F9D86F181 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TV-Hymnal.TVUITests" */;
+			buildPhases = (
+				50DB8BC166E3EEA2C1F99999D6F97C11 /* Headers */,
+				D73F34ABA5131E8DFED4E4CB8EB7C3F6 /* Sources */,
+				273849326AE8C18BE33AEFC7675609DA /* Frameworks */,
+				E6C108396D655B547CECEB7562103BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hymnal.TV-Hymnal.TVUITests";
+			productName = "Pods-Hymnal.TV-Hymnal.TVUITests";
+			productReference = 37D59AB9CAA633D499FB6091E2B6CCCC /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9FB52DFA8316ED1D1266992E362EE8E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				B6B243AD3B06A1C7A00124F11A254427 /* Pods-Hymnal.iOS */,
+				BCC7FAA270B506139E44F90E6EDD009F /* Pods-Hymnal.iOS-Hymnal.iOSUITests */,
+				17150A965DE8BC15A826BF98A58DFAE6 /* Pods-Hymnal.iOSTests */,
+				81832E8B2C21642F65271E373696C6D2 /* Pods-Hymnal.OSX */,
+				D1A7D8B84BF471A672A22B58F7C8E010 /* Pods-Hymnal.OSX-Hymnal.OSXUITests */,
+				4D212C0EEFA825104E4FBEF275874327 /* Pods-Hymnal.OSXTests */,
+				00130553934CD7F0AA50BA63A24B672B /* Pods-Hymnal.TV */,
+				FAEAF79403F8263C1DCCB1A51C9B0EE8 /* Pods-Hymnal.TV-Hymnal.TVUITests */,
+				6DE7635B29220D4FF5EEE45F4B52757A /* Pods-Hymnal.TVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1292C957B3E26029B6CDE001284BA23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F84FCCA73B501ECD226748AF47FFA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A538E506E75B892D760369584B568E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B6D78F6E906CBBF6E746925B324A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FD1215B12809AB6AB547BF1E9C7557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC52E33691998BEA79338F9B7DAAEF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EE0B2C864A8F2E4E1B5E3CCBBEB152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C108396D655B547CECEB7562103BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3ECB34D176D85F613E8DBD80B22144A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA5DA81F8292820D65F403E941074FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3EDB2A16A244B0611A50DCA4DFDE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F376512CE74BDACBEA25AD6B942702BE /* Pods-Hymnal.TV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A13BE6E8A6C8AAE8ED0BA58B011944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A99CDBD610FB969BB1E9F2D994A30B8 /* Pods-Hymnal.iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591AA55EB87AB6F0C397C9785A888FF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF27E41E41DEEC997FCEC137BBECBCD0 /* Pods-Hymnal.OSXTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */,
+				4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */,
+				3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */,
+				C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */,
+				102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */,
+				5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */,
+				7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */,
+				C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */,
+				980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */,
+				C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */,
+				4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */,
+				8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */,
+				AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6986F9A028CFA49856A2176597C24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE58F87D4FD866F913DFBFD00A7D635B /* Pods-Hymnal.OSX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2226534CEF8FF796CB72E9AD4F778B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F576B153D35450B29ADD574DE7B798 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73F34ABA5131E8DFED4E4CB8EB7C3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D1B8E6D2D990849B3DFAD39A5EEF46 /* Pods-Hymnal.TV-Hymnal.TVUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75A0098DC6939B9A065F576F647604A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0318283D84BD1009FEAB7836F97E421 /* Pods-Hymnal.iOS-Hymnal.iOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64E76CB5ADDDDCBE7C32F75C7854AA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38076333179FE91691A7C368AD63C699 /* Pods-Hymnal.iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7346B24A14C93B925B6B3F7ADC2885B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32B4F5E939984F18856835AFE01C0A9 /* Pods-Hymnal.TVTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D70ABC6B683ED2105CBB1E2217FE054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Hymnal.OSX";
+			target = 81832E8B2C21642F65271E373696C6D2 /* Pods-Hymnal.OSX */;
+			targetProxy = 75236D11549C4AB6B540B54ECBD5234D /* PBXContainerItemProxy */;
+		};
+		3986D1244BF8BAC66B3B7E2B15F8F5F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Hymnal.TV";
+			target = 00130553934CD7F0AA50BA63A24B672B /* Pods-Hymnal.TV */;
+			targetProxy = 1C81A8B9D3BD6494FE7DCDBB33B859A5 /* PBXContainerItemProxy */;
+		};
+		4E0BBCCD393DB5E5A2B7B12C37F27C15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 86E25E9676125441585EB3B59927122B /* PBXContainerItemProxy */;
+		};
+		D18DE6A593C029F97BD808E6CFB06A9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Hymnal.iOS";
+			target = B6B243AD3B06A1C7A00124F11A254427 /* Pods-Hymnal.iOS */;
+			targetProxy = CC4BFB77342529072051F2A5F545225B /* PBXContainerItemProxy */;
+		};
+		DA710EFD4ADB9F77313754834ED9FF33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = D503254FA5FDF4FCBB11BE01E85448C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CA72378C7C97D55E63B215A902EF7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D92F30DA1535214AC9399823E20AC3 /* Pods-Hymnal.TV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0E1798E0092DFB36462BA4D21EA72F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DEF59CDB0142C5276B007754DA5703C /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12339958631F64787989566B58E844CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1644F5D059AEA42457CC43CE84749B75 /* Pods-Hymnal.iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A52E648BA1E374F9B594426DB9A10E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55799445A116FD7B70F542C0406DB6C /* Pods-Hymnal.TV-Hymnal.TVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34F580984B249A8ECC95B00D84DEC268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB996A2B61920EDDBE009EE15765244D /* Pods-Hymnal.TVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6AA54B995999C6EC32E52E640868A6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
+		6E7C2B98908FDD8D889ADC53997A7D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB0ECB8B82A4BC6DCB06C29B3BB8119 /* Pods-Hymnal.OSX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FCEA0C6E236B56FC2EF2D3931E412A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039DF1EB92B17DAE222DDEA1928E09AF /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90AAF843F67A560DB523F885D8E0647D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5510217A570F50FAA3F5E1094A0F0E0 /* IQKeyboardManagerSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A7C797FBF675BE74629C517AABD7808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37215DD7BC37250CEA686C278C9A1919 /* Pods-Hymnal.iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9EACABEA53EB35663641B129F2718052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DF660446BC8D98DA1F6FB6725440E3 /* IQKeyboardManagerSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0B1A346240073411B15D94824D5ED3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDD743A2A5B3137106607EA035B691C /* Pods-Hymnal.TV-Hymnal.TVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TV-Hymnal.TVUITests/Pods-Hymnal.TV-Hymnal.TVUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B70A1C8EFA543AD310BE68236EECD997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD1CDD3A3C5B2AB6422274ABCE59741 /* Pods-Hymnal.iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOS/Pods-Hymnal.iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB07084ADDBE9A8C4B153124C4896543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC19A3C277E1D18C0211953B8B0C61B /* Pods-Hymnal.iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOSTests/Pods-Hymnal.iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB92099F91550080C6D155D4BE080CBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9757CB27A49DA382AD15FC0BCF9E12 /* Pods-Hymnal.OSX.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSX/Pods-Hymnal.OSX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD7F38EECFA23C689D300BE54CCEC04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34D3BD35EA113EBFACF1E0E050CF373 /* Pods-Hymnal.TV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TV/Pods-Hymnal.TV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C818476360633E8BCD7C9C1243446689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD41D8EFD00E55FE8E01C2F1E738F63 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSX-Hymnal.OSXUITests/Pods-Hymnal.OSX-Hymnal.OSXUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4088763FEBAF35B8046AA106F00E8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB84AB5FA1E9CCF59BD38BE80CF67F92 /* Pods-Hymnal.OSXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DABC2368714376B2388D03350F45650D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1296D46276D6C5418E0F8F8F9D60DD9D /* Pods-Hymnal.OSXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.OSXTests/Pods-Hymnal.OSXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E03269C59021B06DDF79448F4D1EE91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667FC8CD3F482576FAEAD0BB0AC9E0B0 /* Pods-Hymnal.TVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.TVTests/Pods-Hymnal.TVTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E47EEFE18504E5B36545A229F10E5667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6747BF8B4049C1513850A8BC9BBF2A72 /* Pods-Hymnal.iOS-Hymnal.iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hymnal.iOS-Hymnal.iOSUITests/Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC41D189E6539571BCACB302FCDB6BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C692BD3EC85E7A9AC41DD364C7B1D56 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB07084ADDBE9A8C4B153124C4896543 /* Debug */,
+				12339958631F64787989566B58E844CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32BA31B10C052733F3A292524F739FFA /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70A1C8EFA543AD310BE68236EECD997 /* Debug */,
+				9A7C797FBF675BE74629C517AABD7808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BED37B51A9B58060B12A8424A24FDA7 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F580984B249A8ECC95B00D84DEC268 /* Debug */,
+				E03269C59021B06DDF79448F4D1EE91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		452617F2705EFEA5BD01965713864165 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB92099F91550080C6D155D4BE080CBF /* Debug */,
+				6E7C2B98908FDD8D889ADC53997A7D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC41D189E6539571BCACB302FCDB6BF7 /* Debug */,
+				6AA54B995999C6EC32E52E640868A6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DB62B5DBD16CBDF64E365B77FD83DF /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSX-Hymnal.OSXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C818476360633E8BCD7C9C1243446689 /* Debug */,
+				6FCEA0C6E236B56FC2EF2D3931E412A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88553AD3E01CD25933E15E7F9D86F181 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TV-Hymnal.TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A52E648BA1E374F9B594426DB9A10E6 /* Debug */,
+				A0B1A346240073411B15D94824D5ED3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E39AE254CEEBF96071815225222EC99 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7F38EECFA23C689D300BE54CCEC04C /* Debug */,
+				0CA72378C7C97D55E63B215A902EF7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90AAF843F67A560DB523F885D8E0647D /* Debug */,
+				9EACABEA53EB35663641B129F2718052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D933EB4CF0202714602D7583BD42C419 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABC2368714376B2388D03350F45650D /* Debug */,
+				D4088763FEBAF35B8046AA106F00E8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA57BEA65FDB5E4718A82D4B1B5DCBF4 /* Build configuration list for PBXNativeTarget "Pods-Hymnal.iOS-Hymnal.iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E1798E0092DFB36462BA4D21EA72F2C /* Debug */,
+				E47EEFE18504E5B36545A229F10E5667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

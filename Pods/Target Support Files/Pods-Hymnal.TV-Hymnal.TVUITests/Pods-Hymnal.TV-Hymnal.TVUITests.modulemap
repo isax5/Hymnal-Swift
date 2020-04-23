@@ -1,0 +1,6 @@
+framework module Pods_Hymnal_TV_Hymnal_TVUITests {
+  umbrella header "Pods-Hymnal.TV-Hymnal.TVUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

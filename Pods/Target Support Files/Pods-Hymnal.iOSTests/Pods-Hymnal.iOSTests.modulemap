@@ -1,0 +1,6 @@
+framework module Pods_Hymnal_iOSTests {
+  umbrella header "Pods-Hymnal.iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

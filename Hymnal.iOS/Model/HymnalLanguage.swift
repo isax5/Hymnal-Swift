@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct HymnalLanguage {
+//
+/**
+ Hymnal Language
+ 
+ - Version
+ 1.0
+*/
+struct HymnalLanguage: Encodable, Decodable {
     var Id: String
     var TwoLetterISOLanguageName: String
     var Name: String

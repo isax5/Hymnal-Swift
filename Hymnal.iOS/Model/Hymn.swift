@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Hymn {
+struct Hymn: Encodable, Decodable {
     let Number: Int
     let Title: String
     let Content: String

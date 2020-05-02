@@ -11,8 +11,17 @@ struct K {
     
     // Segues
     struct Segue {
-        static let ShowHymnal = "ShowHymnal"
+        static let ShowHymn = "ShowHymn"
         static let ShowMusicSheet = "ShowMusicSheet"
+    }
+    
+    // Cells
+    struct Cell {
+        static let HymnTextCellNibName = "HymnTextTableViewCell"
+        static let HymnTextIdentifier = "HymnTextCellIdentifier"
+        
+        static let HymnNumberCellNibName = "HymnNumberTableViewCell"
+        static let HymnNumberIdentifier = "HymnNumberCellIdentifier"
     }
     
 }

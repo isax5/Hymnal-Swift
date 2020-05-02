@@ -115,23 +115,23 @@
 		21F5567D495073210FD9366A8305D6E9 /* Pods-Hymnal.TV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.TV-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24333734C85CFE1654CE4191572C2CC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2664C92EBF6CD649555FFF17915B7E00 /* Pods-Hymnal.TV-Hymnal.TVUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TV-Hymnal.TVUITests.modulemap"; sourceTree = "<group>"; };
-		27A457E68DC8992D738DE3883DF01AFA /* Pods_Hymnal_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOSTests.framework; path = "Pods-Hymnal.iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A457E68DC8992D738DE3883DF01AFA /* Pods_Hymnal_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289E75145E17AE8E2CB136609D2C00B3 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
 		2B0BCEB9F066AC79609D6853AEA2A64B /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
 		2BB0ECB8B82A4BC6DCB06C29B3BB8119 /* Pods-Hymnal.OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSX.release.xcconfig"; sourceTree = "<group>"; };
 		2CE53CBC568974DF4FEE6D12D27FAA02 /* Pods-Hymnal.OSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSXTests-dummy.m"; sourceTree = "<group>"; };
 		2CEB1743BE20E6A096D1EBC53D4AEF9B /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
 		3057707BB706AAF034B6D708F9A227AE /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		3557C276A63F5E3981C3C780F8CD5970 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOS_Hymnal_iOSUITests.framework; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3557C276A63F5E3981C3C780F8CD5970 /* Pods_Hymnal_iOS_Hymnal_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOS_Hymnal_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DC40C1EF7D0105E94C5626CB0919DC /* Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-Info.plist"; sourceTree = "<group>"; };
 		37215DD7BC37250CEA686C278C9A1919 /* Pods-Hymnal.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS.release.xcconfig"; sourceTree = "<group>"; };
-		37D59AB9CAA633D499FB6091E2B6CCCC /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TV_Hymnal_TVUITests.framework; path = "Pods-Hymnal.TV-Hymnal.TVUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D59AB9CAA633D499FB6091E2B6CCCC /* Pods_Hymnal_TV_Hymnal_TVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TV_Hymnal_TVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B42027A0B4CE9AC5CA8C5249BA1DF87 /* Pods-Hymnal.OSXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.OSXTests.modulemap"; sourceTree = "<group>"; };
 		3BF0C69B3B6881C804F89A7040C51130 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
 		3C10BED17A3F30484BF64F0171ADA6DE /* Pods-Hymnal.OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSX-umbrella.h"; sourceTree = "<group>"; };
 		42021AB0A7B000F64F66C7A20A0F71D9 /* Pods-Hymnal.OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSX-dummy.m"; sourceTree = "<group>"; };
-		420C45124D072FC9121E1F6A02D3B096 /* Pods_Hymnal_TVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TVTests.framework; path = "Pods-Hymnal.TVTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43D500A10B97B59BC2F37AD4756EE868 /* Pods_Hymnal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_iOS.framework; path = "Pods-Hymnal.iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		420C45124D072FC9121E1F6A02D3B096 /* Pods_Hymnal_TVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D500A10B97B59BC2F37AD4756EE868 /* Pods_Hymnal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DF660446BC8D98DA1F6FB6725440E3 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
 		499528D670094E6DD5070879CF1D6F52 /* Pods-Hymnal.iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.iOSTests-dummy.m"; sourceTree = "<group>"; };
 		49E896675FFBFC416F684B2140623B8D /* Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		4E1CC3A3206D1F6154036CACB273DB06 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FE398DE31068E6980C5F707C3AF98E7 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-dummy.m"; sourceTree = "<group>"; };
 		52F781906C447D33341B502ED46D2EC2 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
-		5A6BFC5739B6E1BB098CDB3567C65EDF /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSX_Hymnal_OSXUITests.framework; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6BFC5739B6E1BB098CDB3567C65EDF /* Pods_Hymnal_OSX_Hymnal_OSXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSX_Hymnal_OSXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADBD36F931B48F3FE5A0EBB5B58568F /* Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-umbrella.h"; sourceTree = "<group>"; };
 		5E337F65272EF5661311A364F87BD557 /* Pods-Hymnal.OSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-acknowledgements.plist"; sourceTree = "<group>"; };
 		62F48AECC1D920FE451D469C408170A1 /* Pods-Hymnal.OSX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hymnal.OSX-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		6C3438D97AB43163E96A2917E8A505E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		72BD7F7755E1A630C3813F4293009939 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		74A873E0AC12D7F1EE6F8EB8D0947132 /* Pods-Hymnal.OSXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.OSXTests-umbrella.h"; sourceTree = "<group>"; };
-		797849F0C91249B4B7AD5A791CFF4B30 /* Pods_Hymnal_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSX.framework; path = "Pods-Hymnal.OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797849F0C91249B4B7AD5A791CFF4B30 /* Pods_Hymnal_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B65C5F55D2A2359AADCC3F0D2E7AEA9 /* Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSX-Hymnal.OSXUITests-Info.plist"; sourceTree = "<group>"; };
 		7DEF59CDB0142C5276B007754DA5703C /* Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F6E6454CE3A244F6328C591D525BF6E /* Pods-Hymnal.TV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.TV-umbrella.h"; sourceTree = "<group>"; };
@@ -161,11 +161,11 @@
 		908D385235BE67785563A55A61BB22F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		97D92F30DA1535214AC9399823E20AC3 /* Pods-Hymnal.TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TV.release.xcconfig"; sourceTree = "<group>"; };
 		9B9D2D4F428FC41267177F3F3BC7ABF2 /* Pods-Hymnal.TV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.TV-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A132422F7FD2826D961BDFDAF131EB48 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
 		A50AA953D3F3EAA3F8912DC0AEAC0FF5 /* Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-Hymnal.TVUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A73967545567146751908E684CF47B8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B34A71063A44B3697C4C235DE3E106 /* Pods-Hymnal.TV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TV.modulemap"; sourceTree = "<group>"; };
 		AB84AB5FA1E9CCF59BD38BE80CF67F92 /* Pods-Hymnal.OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.OSXTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB996A2B61920EDDBE009EE15765244D /* Pods-Hymnal.TVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hymnal.TVTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		CC6E169C7F07F18E583EAD2D81B83E9E /* Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests-umbrella.h"; sourceTree = "<group>"; };
 		CF6DD378F116DBCCF63128E947537938 /* Pods-Hymnal.iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		CF70FA1F8F83B1B931252AB208DD8CCD /* Pods-Hymnal.iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hymnal.iOS-frameworks.sh"; sourceTree = "<group>"; };
-		D162827B98018736A09FFD2B2ED7F9A5 /* Pods_Hymnal_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_TV.framework; path = "Pods-Hymnal.TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D162827B98018736A09FFD2B2ED7F9A5 /* Pods_Hymnal_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E135023F07765F760863015A0D7C08 /* Pods-Hymnal.TVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.TVTests.modulemap"; sourceTree = "<group>"; };
 		D40F2ED5D6235545F011FE15CE6D45D0 /* Pods-Hymnal.TVTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TVTests-Info.plist"; sourceTree = "<group>"; };
 		D8ECC01687E7D94180BD3923E05E6DCC /* Pods-Hymnal.iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.iOS-dummy.m"; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		E0F43534BC1AFDC445DBE922ACC7C646 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		E3860673C928DD072E1B99214F673431 /* Pods-Hymnal.TVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hymnal.TVTests-dummy.m"; sourceTree = "<group>"; };
 		E39D5918B254D6EDE0839F6480D09FDA /* Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hymnal.iOS-Hymnal.iOSUITests.modulemap"; sourceTree = "<group>"; };
-		E3AB10B823B585CC600AADDE595384E6 /* Pods_Hymnal_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hymnal_OSXTests.framework; path = "Pods-Hymnal.OSXTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3AB10B823B585CC600AADDE595384E6 /* Pods_Hymnal_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hymnal_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88FF0C12CB768F1D409CD9EB4DC3B3F /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		EBC47416100755F0F07F997475829213 /* Pods-Hymnal.OSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.OSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC0B6E95E628F264B1679F8E0A11FFF1 /* Pods-Hymnal.TV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hymnal.TV-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -345,7 +345,6 @@
 				C5DB788589E16A50605EEF6AD68F414C /* IQUIViewController+Additions.swift */,
 				1B4455A90DD87B30FEF59D39B8E6A752 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -853,7 +852,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -1344,7 +1343,6 @@
 			baseConfigurationReference = 2BB0ECB8B82A4BC6DCB06C29B3BB8119 /* Pods-Hymnal.OSX.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1384,7 +1382,6 @@
 			baseConfigurationReference = 039DF1EB92B17DAE222DDEA1928E09AF /* Pods-Hymnal.OSX-Hymnal.OSXUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1648,7 +1645,6 @@
 			baseConfigurationReference = CB9757CB27A49DA382AD15FC0BCF9E12 /* Pods-Hymnal.OSX.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1725,7 +1721,6 @@
 			baseConfigurationReference = 0CD41D8EFD00E55FE8E01C2F1E738F63 /* Pods-Hymnal.OSX-Hymnal.OSXUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1765,7 +1760,6 @@
 			baseConfigurationReference = AB84AB5FA1E9CCF59BD38BE80CF67F92 /* Pods-Hymnal.OSXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1805,7 +1799,6 @@
 			baseConfigurationReference = 1296D46276D6C5418E0F8F8F9D60DD9D /* Pods-Hymnal.OSXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -8,11 +8,13 @@
 import UIKit
 
 class SearchTableViewController: UITableViewController {
+    let hymnManager = HymnManager.sharedInstance
+    var hymnal: [Hymn]?
+    
     let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // 1
         searchController.searchResultsUpdater = self
         // 2
@@ -29,74 +31,80 @@ class SearchTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.register(UINib(nibName: K.Cell.HymnTextCellNibName, bundle: nil), forCellReuseIdentifier: K.Cell.HymnTextIdentifier)
+        loadItems()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        searchController.becomeFirstResponder()
+        searchController.searchBar.becomeFirstResponder()
+        searchController.searchBar.searchTextField.becomeFirstResponder()
+    }
+    
+    func loadItems() {
+        
+        hymnManager.FetchHymnal(language: hymnManager.debugLanguage) { (hymnal) in
+            DispatchQueue.main.async {
+                self.hymnal = hymnal
+                self.tableView.reloadData()
+                print("Reload Data with \(hymnal.count) hymns")
+            }
+        }
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if let hs = hymnal {
+            return hs.count
+        } else {
+            return 0
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.HymnTextIdentifier, for: indexPath) as! HymnTextTableViewCell
+        
+        if let h = hymnal {
+            let hymn = h[indexPath.row]
+            cell.title.text = hymn.Title
+            // TODO: Allow just 10 first words and without \n
+            cell.subtitle.text = hymn.Content
+            cell.number.text = String(hymn.Number)
+        }
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let hymn = hymnal?[indexPath.row] else { return }
+        self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        // TODO: Make standard segue preparetion for this specific implementation
+        switch segue.identifier {
+        case K.Segue.ShowHymn:
+            if let navVC = segue.destination as? UINavigationController,
+                let destination = navVC.viewControllers.first as? HymnViewController,
+                let h = sender as? Hymn {
+                
+                destination.hymn = h
+            }
+            
+        default:
+            break
+        }
     }
-    */
 
 }
 

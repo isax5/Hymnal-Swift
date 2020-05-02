@@ -7,8 +7,10 @@
 
 import UIKit
 
-class IndexViewController: UIViewController {
+class IndexTableViewController: UITableViewController {
 
+    let hymnManager = HymnManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +28,12 @@ class IndexViewController: UIViewController {
     }
     */
 
+}
+
+
+//MARK: - DataSource
+extension IndexTableViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
 }

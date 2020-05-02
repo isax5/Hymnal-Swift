@@ -8,6 +8,8 @@
 import UIKit
 
 class FavoritesViewController: UIViewController {
+    
+    let hymnManager = HymnManager.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()

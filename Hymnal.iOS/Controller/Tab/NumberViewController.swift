@@ -10,6 +10,8 @@ import UIKit
 class NumberViewController: UIViewController {
     @IBOutlet weak var numberTextField: UITextField!
     
+    let hymnManager = HymnManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,12 +24,8 @@ class NumberViewController: UIViewController {
         if let text = numberTextField.text, let number = Int(text) {
             
             // Fetch hymn
-            let hymnService = HymnManager.sharedInstance
-            
-            let language = HymnalLanguage(Id: "", TwoLetterISOLanguageName: "", Name: "", Detail: "", HymnsFileName: "", ThematicHymnsFileName: "", SungMusic: "", InstrumentalMusic: "", HymnsSheetsFileName: "")
-            
-            hymnService.FetchHymn(number: number, language: language) { (hymn) in
-                self.performSegue(withIdentifier: K.Segue.ShowHymnal, sender: hymn)
+            hymnManager.FetchHymn(number: number, language: hymnManager.debugLanguage) { (hymn) in
+                self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
             }
             
         } else {
@@ -39,8 +37,9 @@ class NumberViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // TODO: Make standard segue preparetion for this specific implementation
         switch segue.identifier {
-        case K.Segue.ShowHymnal:
+        case K.Segue.ShowHymn:
             if let navVC = segue.destination as? UINavigationController,
                 let destination = navVC.viewControllers.first as? HymnViewController,
                 let h = sender as? Hymn {

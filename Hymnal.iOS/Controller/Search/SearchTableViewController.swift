@@ -34,6 +34,8 @@ class SearchTableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: K.Cell.HymnTextCellNibName, bundle: nil), forCellReuseIdentifier: K.Cell.HymnTextIdentifier)
         loadItems()
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = K.Cell.HymnTextHeight
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,7 +52,7 @@ class SearchTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self.hymnal = hymnal
                 self.tableView.reloadData()
-                print("Reload Data with \(hymnal.count) hymns")
+                print("Reload Search Page with \(hymnal.count) hymns")
             }
         }
     }

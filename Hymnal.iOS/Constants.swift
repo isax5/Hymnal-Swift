@@ -5,7 +5,7 @@
 //  Created by Isaac Rebolledo Leal on 04-04-20.
 //
 
-import Foundation
+import UIKit
 
 struct K {
     
@@ -19,6 +19,7 @@ struct K {
     struct Cell {
         static let HymnTextCellNibName = "HymnTextTableViewCell"
         static let HymnTextIdentifier = "HymnTextCellIdentifier"
+        static let HymnTextHeight: CGFloat = 120
         
         static let HymnNumberCellNibName = "HymnNumberTableViewCell"
         static let HymnNumberIdentifier = "HymnNumberCellIdentifier"

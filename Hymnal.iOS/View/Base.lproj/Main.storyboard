@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" title="Adventist Hymnal" largeTitleDisplayMode="always" id="sHJ-bi-Obc">
                         <barButtonItem key="leftBarButtonItem" title="records" image="gobackward" catalog="system" id="cAi-Gk-Bsf">
                             <connections>
-                                <segue destination="3Wg-Y0-rqh" kind="show" identifier="goToHistory" id="GcN-2U-FrG"/>
+                                <segue destination="3Wg-Y0-rqh" kind="showDetail" identifier="goToHistory" id="GcN-2U-FrG"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="search" image="magnifyingglass" catalog="system" id="Fi4-J6-tTb">
@@ -79,7 +79,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numberTextField" destination="Eer-PC-Iv0" id="S9G-z2-DbE"/>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="nUA-ND-jpF"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" id="nUA-ND-jpF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -138,7 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="j8T-tW-xVb"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fl9-vI-lIP"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" id="Fl9-vI-lIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4X-zB-QCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,7 +202,7 @@
         <!--Index-->
         <scene sceneID="K7w-55-H8r">
             <objects>
-                <tableViewController id="CMW-4j-AtE" customClass="ShowHymnal" sceneMemberID="viewController">
+                <tableViewController id="CMW-4j-AtE" customClass="IndexTableViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dlg-21-n7P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,9 +212,23 @@
                             <outlet property="delegate" destination="CMW-4j-AtE" id="LZ0-mo-UMe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Index" id="eTR-Bo-38Q"/>
+                    <navigationItem key="navigationItem" title="Index" id="eTR-Bo-38Q">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" segmentControlStyle="bar" selectedSegmentIndex="1" springLoaded="YES" id="kki-lT-dms">
+                            <rect key="frame" x="62" y="5.5" width="290" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Alphabetical"/>
+                                <segment title="Numerical"/>
+                                <segment title="Thematic"/>
+                            </segments>
+                            <connections>
+                                <action selector="indexStyleChanged:" destination="CMW-4j-AtE" eventType="valueChanged" id="udE-Wf-pm9"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="zRJ-fq-miI"/>
+                        <outlet property="indexStyle" destination="kki-lT-dms" id="8YO-js-Osu"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" id="zRJ-fq-miI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6t3-4k-vId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -264,7 +278,7 @@
             <objects>
                 <viewController id="3Wg-Y0-rqh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XSC-1M-SrF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OKk-5a-Z3l"/>
@@ -290,7 +304,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Search" largeTitleDisplayMode="always" id="VIG-Hw-sHc"/>
                     <connections>
-                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="3Fb-8r-Imo"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" id="3Fb-8r-Imo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXl-Sn-3Vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

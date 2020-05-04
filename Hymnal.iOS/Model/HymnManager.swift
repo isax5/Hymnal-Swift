@@ -148,3 +148,15 @@ class HymnManager {
     
 }
 
+extension Array where Element == Hymn {
+    
+    func OrderByTitle() -> [Hymn] {
+        // FIXME: situation with ´, !, ¿, etc.
+        return self.sorted { $0.Title < $1.Title }
+    }
+    
+    func OrderByNumber() -> [Hymn] {
+        return self.sorted { $0.Number < $1.Number }
+    }
+    
+}

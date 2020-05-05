@@ -64,7 +64,6 @@ class SearchTableViewController: UITableViewController {
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // TODO: Make standard segue preparation for this specific implementation
@@ -92,7 +91,7 @@ extension SearchTableViewController: UISearchResultsUpdating {
   }
 }
 
-//MARK: - Table view DataSource
+//MARK: - TableView DataSource & Delegate
 extension SearchTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

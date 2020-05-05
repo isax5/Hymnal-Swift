@@ -8,9 +8,10 @@
 import UIKit
 
 class NumberViewController: UIViewController {
-    @IBOutlet weak var numberTextField: UITextField!
     
     let hymnManager = HymnManager.sharedInstance
+    
+    @IBOutlet weak var numberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

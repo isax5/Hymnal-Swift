@@ -1,22 +1,25 @@
 //
-//  IndexViewController.swift
+//  RecordsViewController.swift
 //  Hymnal.iOS
 //
-//  Created by Isaac Rebolledo Leal on 28-03-20.
+//  Created by Isaac Rebolledo Leal on 05-05-20.
 //
 
 import UIKit
 
-class IndexTableViewController: UITableViewController {
-
+class RecordsViewController: UIViewController {
+    
     let hymnManager = HymnManager.sharedInstance
     var hymnal: [Hymn]?
     
-    @IBOutlet weak var indexStyle: UISegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         
         // Personalized Row
         tableView.register(UINib(nibName: K.Cell.HymnTextCellNibName, bundle: nil), forCellReuseIdentifier: K.Cell.HymnTextIdentifier)
@@ -27,49 +30,20 @@ class IndexTableViewController: UITableViewController {
         loadItems()
     }
     
-    
-    
-    private func loadItems() {
+    func loadItems() {
         
         hymnManager.FetchHymnal(language: hymnManager.debugLanguage) { (hymnal) in
             DispatchQueue.main.async {
-                self.hymnal = hymnal
-                self.orderItems()
+                self.hymnal = hymnal.OrderByNumber()
+                self.tableView.reloadData()
                 print("Reload \(self.self) Page with \(hymnal.count) hymns")
             }
         }
     }
     
-    private func orderItems() {
 
-        if let hml = hymnal {
-            
-            switch (indexStyle.selectedSegmentIndex) {
-            case 0:
-                hymnal = hml.OrderByTitle()
-            case 1:
-                hymnal = hml.OrderByNumber()
-            case 2:
-                hymnal = hml
-            default:
-                hymnal = hml
-            }
-        }
-        
-        self.tableView.reloadData()
-    }
-    
-    
-    @IBAction func indexStyleChanged(_ sender: UISegmentedControl) {
-        print("Order index: \(sender.selectedSegmentIndex) or \(String(describing: sender.titleForSegment(at: sender.selectedSegmentIndex)))")
-        
-        orderItems()
-    }
-    
-    
-    
     // MARK: - Navigation
-    
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -90,18 +64,18 @@ class IndexTableViewController: UITableViewController {
 
 }
 
-
-//MARK: - Table View DataSource
-extension IndexTableViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//MARK: - TableView DataSource & Delegate
+extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let hml = hymnal {
             return hml.count
         } else {
             return 0
         }
     }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.HymnTextIdentifier, for: indexPath) as! HymnTextTableViewCell
         
         if let hml = hymnal {
@@ -112,14 +86,15 @@ extension IndexTableViewController {
             cell.subtitle.text = hymn.Content
             cell.number.text = String(hymn.Number)
         }
-
+        
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
         guard let hymn = hymnal?[indexPath.row] else { return }
         self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
     }
+
 }

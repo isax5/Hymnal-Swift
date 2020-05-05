@@ -105,7 +105,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1036" y="1202"/>
+            <point key="canvasLocation" x="-1028" y="1100"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="5GQ-QD-csN">
@@ -273,26 +273,58 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="1684.8214285714284"/>
         </scene>
-        <!--History-->
+        <!--Records-->
         <scene sceneID="nYe-ub-2Rp">
             <objects>
-                <viewController id="3Wg-Y0-rqh" sceneMemberID="viewController">
+                <viewController title="Records" id="3Wg-Y0-rqh" customClass="RecordsViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XSC-1M-SrF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozQ-XP-I0c" userLabel="Top Slider">
+                                <rect key="frame" x="157" y="15" width="100" height="6"/>
+                                <color key="backgroundColor" name="Top Slider Modal Page Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="5gf-AT-qrr"/>
+                                    <constraint firstAttribute="width" constant="100" id="yMe-m5-fvz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-s4-7iL">
+                                <rect key="frame" x="0.0" y="41" width="414" height="801"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ozQ-XP-I0c" firstAttribute="top" secondItem="OKk-5a-Z3l" secondAttribute="top" constant="15" id="EUl-8s-oHN"/>
+                            <constraint firstItem="2W0-s4-7iL" firstAttribute="top" secondItem="ozQ-XP-I0c" secondAttribute="bottom" constant="20" id="NU4-co-aTg"/>
+                            <constraint firstAttribute="trailing" secondItem="2W0-s4-7iL" secondAttribute="trailing" id="SBg-vI-Dnj"/>
+                            <constraint firstAttribute="bottom" secondItem="2W0-s4-7iL" secondAttribute="bottom" id="XaY-1J-Spq"/>
+                            <constraint firstItem="2W0-s4-7iL" firstAttribute="leading" secondItem="XSC-1M-SrF" secondAttribute="leading" id="Yln-9g-0Ro"/>
+                            <constraint firstItem="ozQ-XP-I0c" firstAttribute="centerX" secondItem="XSC-1M-SrF" secondAttribute="centerX" id="tR1-1b-qiv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OKk-5a-Z3l"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="zoh-01-ILM"/>
+                    <connections>
+                        <outlet property="tableView" destination="2W0-s4-7iL" id="8VA-Qs-0b2"/>
+                        <segue destination="a7G-KK-VMB" kind="presentation" identifier="ShowHymn" modalPresentationStyle="fullScreen" id="2Xi-6r-HCh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9v-bu-kWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746" y="-766"/>
+            <point key="canvasLocation" x="2991" y="-1067"/>
         </scene>
         <!--Search-->
         <scene sceneID="8Dl-JG-gcO">
             <objects>
-                <tableViewController id="nRl-gD-u3t" customClass="SearchTableViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Search" hidesBottomBarWhenPushed="YES" id="nRl-gD-u3t" customClass="SearchTableViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ysS-IH-BSA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,7 +341,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXl-Sn-3Vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457.971014492754" y="-764.0625"/>
+            <point key="canvasLocation" x="3905" y="-1067"/>
         </scene>
         <!--#255-->
         <scene sceneID="7ah-Vk-Wz9">
@@ -434,7 +466,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Fb-8r-Imo"/>
+        <segue reference="2Xi-6r-HCh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>
@@ -447,6 +479,9 @@
         <image name="tab number" width="30" height="30"/>
         <image name="tab settings" width="30" height="30"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="Top Slider Modal Page Color">
+            <color red="0.66269630189999995" green="0.66667765379999999" blue="0.66273957490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="filter background">
             <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

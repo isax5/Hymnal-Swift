@@ -278,7 +278,7 @@
             <objects>
                 <viewController title="Records" id="3Wg-Y0-rqh" customClass="RecordsViewController" customModule="Hymnal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XSC-1M-SrF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozQ-XP-I0c" userLabel="Top Slider">
@@ -466,7 +466,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2Xi-6r-HCh"/>
+        <segue reference="3Fb-8r-Imo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="global tint"/>
     <resources>

@@ -8,15 +8,22 @@
 import UIKit
 
 class IndexTableViewController: UITableViewController {
-
+    
     let hymnManager = HymnManager.sharedInstance
-    var hymnal = [Hymn]()
+    var hymnArray = [Hymn]()
+    
+    let searchController = UISearchController()
     
     @IBOutlet weak var indexStyle: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Search controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        
         
         // Personalized Row
         tableView.register(UINib(nibName: K.Cell.HymnTextCellNibName, bundle: nil), forCellReuseIdentifier: K.Cell.HymnTextIdentifier)
@@ -27,16 +34,24 @@ class IndexTableViewController: UITableViewController {
         loadItems()
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
     
     private func loadItems() {
         
         hymnManager.FetchHymnal(language: hymnManager.debugLanguage) { (hymnal) in
+            
+            self.hymnArray = hymnal
+            self.orderItems()
             DispatchQueue.main.async {
-                self.hymnal = hymnal
-                self.orderItems()
-                print("Reload \(self.self) Page with \(hymnal.count) hymns")
+                self.tableView.reloadData()
             }
+            print("Reload \(self.self) Page with \(hymnal.count) hymns")
+            
         }
     }
     
@@ -44,30 +59,27 @@ class IndexTableViewController: UITableViewController {
         
         switch (indexStyle.selectedSegmentIndex) {
         case 0:
-            hymnal = hymnal.OrderByTitle()
+            hymnArray = hymnArray.OrderByTitle()
         case 1:
-            hymnal = hymnal.OrderByNumber()
+            hymnArray = hymnArray.OrderByNumber()
         case 2:
             break;
         default:
             break;
         }
-        
-        self.tableView.reloadData()
     }
     
-    
+    //MARK: - UISegmentedControl - Order
     @IBAction func indexStyleChanged(_ sender: UISegmentedControl) {
         print("Order index: \(sender.selectedSegmentIndex) or \(String(describing: sender.titleForSegment(at: sender.selectedSegmentIndex)))")
         
         orderItems()
+        tableView.reloadData()
     }
     
     
     
     // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // TODO: Make standard segue preparation for this specific implementation
@@ -84,20 +96,58 @@ class IndexTableViewController: UITableViewController {
             break
         }
     }
-
+    
 }
 
+//MARK: - UISearchResultsUpdating
+extension IndexTableViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        struct Holder {
+            static var previousQuery = ""
+        }
+        
+        if let query = searchController.searchBar.text, query != Holder.previousQuery {
+            Holder.previousQuery = query
+            
+            print("Search: \(query)")
+            
+            if query == "" {
+                loadItems()
+            } else {
+                
+                hymnManager.FetchHymnal(language: hymnManager.debugLanguage) { (hymnal) in
+                    
+                    self.hymnArray = hymnal.filter({ (hymn) -> Bool in
+                        if let _ =  hymn.Title.range(of: query, options: .caseInsensitive) {
+                            return true
+                        } else {
+                            return false
+                        }
+                    })
+                    
+                    self.orderItems()
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
 
 //MARK: - Table View DataSource
 extension IndexTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hymnal.count
+        return hymnArray.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.HymnTextIdentifier, for: indexPath) as! HymnTextTableViewCell
         
-        let hymn = hymnal[indexPath.row]
+        let hymn = hymnArray[indexPath.row]
         cell.title.text = hymn.Title
         
         // TODO: Allow just 10 first words and without '\n' for subtitle
@@ -110,7 +160,7 @@ extension IndexTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let hymn = hymnal[indexPath.row]
+        let hymn = hymnArray[indexPath.row]
         self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
     }
 }

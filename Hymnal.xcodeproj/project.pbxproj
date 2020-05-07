@@ -39,7 +39,7 @@
 		6A3B84FF242F837700D845F2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B84FC242F837700D845F2 /* Media.xcassets */; };
 		6A3B8502242F8C2B00D845F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8501242F8C2B00D845F2 /* ViewController.swift */; };
 		6A3B8504242F8DE100D845F2 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8503242F8DE100D845F2 /* NumberViewController.swift */; };
-		6A3B8506242F8E1500D845F2 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8505242F8E1500D845F2 /* IndexViewController.swift */; };
+		6A3B8506242F8E1500D845F2 /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8505242F8E1500D845F2 /* IndexTableViewController.swift */; };
 		6A3B8508242F8E3300D845F2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B8507242F8E3300D845F2 /* FavoritesViewController.swift */; };
 		6A3B850B242F8E5700D845F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */; };
 		6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B850E242FB26700D845F2 /* HymnViewController.swift */; };
@@ -157,7 +157,7 @@
 		6A3B84FC242F837700D845F2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		6A3B8501242F8C2B00D845F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A3B8503242F8DE100D845F2 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
-		6A3B8505242F8E1500D845F2 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		6A3B8505242F8E1500D845F2 /* IndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
 		6A3B8507242F8E3300D845F2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6A3B850E242FB26700D845F2 /* HymnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnViewController.swift; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				6A3B8503242F8DE100D845F2 /* NumberViewController.swift */,
-				6A3B8505242F8E1500D845F2 /* IndexViewController.swift */,
+				6A3B8505242F8E1500D845F2 /* IndexTableViewController.swift */,
 				6A3B8507242F8E3300D845F2 /* FavoritesViewController.swift */,
 				6A3B850A242F8E5700D845F2 /* SettingsViewController.swift */,
 			);
@@ -1164,7 +1164,7 @@
 				6AABECF12438A19D00B40795 /* HymnManager.swift in Sources */,
 				6AABDD2624617B5400CFB873 /* RecordsViewController.swift in Sources */,
 				6A3B8504242F8DE100D845F2 /* NumberViewController.swift in Sources */,
-				6A3B8506242F8E1500D845F2 /* IndexViewController.swift in Sources */,
+				6A3B8506242F8E1500D845F2 /* IndexTableViewController.swift in Sources */,
 				6AABDD22245DAA2800CFB873 /* HymnTextTableViewCell.swift in Sources */,
 				6A3B8514242FCB0100D845F2 /* SearchTableViewController.swift in Sources */,
 				6A3B850F242FB26700D845F2 /* HymnViewController.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 class RecordsViewController: UIViewController {
     
     let hymnManager = HymnManager.sharedInstance
-    var hymnal: [Hymn]?
+    var hymnal = [Hymn]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -68,24 +68,18 @@ class RecordsViewController: UIViewController {
 extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let hml = hymnal {
-            return hml.count
-        } else {
-            return 0
-        }
+        return hymnal.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.HymnTextIdentifier, for: indexPath) as! HymnTextTableViewCell
         
-        if let hml = hymnal {
-            let hymn = hml[indexPath.row]
-            cell.title.text = hymn.Title
-            
-            // TODO: Allow just 10 first words and without '\n' for subtitle
-            cell.subtitle.text = hymn.Content
-            cell.number.text = String(hymn.Number)
-        }
+        let hymn = hymnal[indexPath.row]
+        cell.title.text = hymn.Title
+        
+        // TODO: Allow just 10 first words and without '\n' for subtitle
+        cell.subtitle.text = hymn.Content
+        cell.number.text = String(hymn.Number)
         
         return cell
     }
@@ -93,7 +87,7 @@ extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        guard let hymn = hymnal?[indexPath.row] else { return }
+        let hymn = hymnal[indexPath.row]
         self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
     }
 

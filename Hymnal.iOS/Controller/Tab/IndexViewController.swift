@@ -10,7 +10,7 @@ import UIKit
 class IndexTableViewController: UITableViewController {
 
     let hymnManager = HymnManager.sharedInstance
-    var hymnal: [Hymn]?
+    var hymnal = [Hymn]()
     
     @IBOutlet weak var indexStyle: UISegmentedControl!
     
@@ -41,19 +41,16 @@ class IndexTableViewController: UITableViewController {
     }
     
     private func orderItems() {
-
-        if let hml = hymnal {
-            
-            switch (indexStyle.selectedSegmentIndex) {
-            case 0:
-                hymnal = hml.OrderByTitle()
-            case 1:
-                hymnal = hml.OrderByNumber()
-            case 2:
-                hymnal = hml
-            default:
-                hymnal = hml
-            }
+        
+        switch (indexStyle.selectedSegmentIndex) {
+        case 0:
+            hymnal = hymnal.OrderByTitle()
+        case 1:
+            hymnal = hymnal.OrderByNumber()
+        case 2:
+            break;
+        default:
+            break;
         }
         
         self.tableView.reloadData()
@@ -94,32 +91,26 @@ class IndexTableViewController: UITableViewController {
 //MARK: - Table View DataSource
 extension IndexTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let hml = hymnal {
-            return hml.count
-        } else {
-            return 0
-        }
+        return hymnal.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.HymnTextIdentifier, for: indexPath) as! HymnTextTableViewCell
         
-        if let hml = hymnal {
-            let hymn = hml[indexPath.row]
-            cell.title.text = hymn.Title
-            
-            // TODO: Allow just 10 first words and without '\n' for subtitle
-            cell.subtitle.text = hymn.Content
-            cell.number.text = String(hymn.Number)
-        }
-
+        let hymn = hymnal[indexPath.row]
+        cell.title.text = hymn.Title
+        
+        // TODO: Allow just 10 first words and without '\n' for subtitle
+        cell.subtitle.text = hymn.Content
+        cell.number.text = String(hymn.Number)
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        guard let hymn = hymnal?[indexPath.row] else { return }
+        let hymn = hymnal[indexPath.row]
         self.performSegue(withIdentifier: K.Segue.ShowHymn, sender: hymn)
     }
 }
